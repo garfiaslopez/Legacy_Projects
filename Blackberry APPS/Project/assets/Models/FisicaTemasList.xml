@@ -1,0 +1,13 @@
+<root>
+
+    <tema title="Constants"        image="/Imagenes/ConstantesF.png"           file="FisicaConstantes.qml"/>
+    <tema title="Equivalences"     image="/Imagenes/Equivalencias.png"         file="/FisicaEquivalencias.qml"/>
+    <tema title="Vectors"          image="/Imagenes/Vectores.png"              file="/FisicaVectores.qml"/>
+    <tema title="Electric Field"   image="/Imagenes/CampoElectrico.png"        file="/FisicaCampoElect.qml"/>
+    <tema title="Electricity"      image="/Imagenes/Electricidad.png"          file="/FisicaElectricidad.qml"/>
+    <tema title="Kinematics, Dynamics "  image="/Imagenes/Dinamica.png"            file="/FisicaCinematica.qml"/>
+    <tema title="Termodynamics"    image="/Imagenes/Termodinamica.png"         file="/FisicaTermodinamica.qml"/>
+    <tema title="Optic"            image="/Imagenes/Optica.png"                file="/FisicaOptica.qml"/>
+    <tema title="hydrostatics"      image="/Imagenes/Hidrostatica.png"          file="/FisicaHidrostatica.qml"/>
+    <tema title="hydrodynamics"     image="/Imagenes/Hidrodinamica.png"         file="/FisicaHidrodinamica.qml"/>
+</root>

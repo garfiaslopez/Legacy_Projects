@@ -1,0 +1,41 @@
+import bb.cascades 1.2
+
+import "Common"
+
+NavigationPane {
+    id: navAreasMates
+    Page {
+        Container {
+            ListView {
+                id: listaAreas
+                dataModel: XmlDataModel {
+                    source: "asset:///Models/AreasMates.xml"           
+                }
+                listItemComponents: [
+                    ListItemComponent {
+                      type: "header"
+                      Label {
+                          text: ListItemData.title
+                          textStyle {
+                              base: SystemDefaults.TextStyles.BigText
+                              fontWeight: FontWeight.Bold
+                              color: Color.create ("#7a184a")
+                          }
+                      }  
+                    },
+                    ListItemComponent {
+                        type: "area"
+                        ListDefaultView {
+                        }
+                        
+                
+            
+                    }
+                    
+                ]
+            }
+        }
+    }
+    
+    
+}

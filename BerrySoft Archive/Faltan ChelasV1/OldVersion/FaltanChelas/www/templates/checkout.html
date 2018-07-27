@@ -1,0 +1,106 @@
+<ion-view title="Confirma tu pedido">
+
+    <ion-content class="padding Container">
+
+    	<!-- <h2 class="TitleSection">Confirma Tu Pedido</h2> -->
+
+		<div class="ListCard card">
+	
+			<ul class="list">
+			    <li class="ListItem" ng-repeat="Product in Products">
+			    	<div class="row">
+			    		<div class="col col-70 ProductItem"> {{(Product.quantity)}} {{Product.product}}</div>
+						<div class="col col-30 PriceItem"> {{Product.price  | currency:"$"}}</div>	
+			    	</div>
+			    </li>
+			    <li class="ListItem">
+			    	<div class="row">
+			    		<div class="col col-80 ProductItem"> Cargo Por Servicio</div>
+						<div class="col col-20 PriceItem"> {{ServiceCharge  | currency:"$"}}</div>	
+			    	</div>
+			    </li>
+			    <li style="border-bottom: white;" class="ListItem">
+			    	<div class="row">
+			    		<div class="col col-70 ProductItem"><b>Total</b></div>
+						<div class="col col-30 PriceItem"><b> {{TotalOrder | currency:"$"}}</b></div>	
+			    	</div>
+			    </li>
+			</ul>
+        </div>
+
+        <h4 class="metodo-pago">Elige el método de pago</h4>
+        <div class="card RoundCard" ng-if="ShowForm">
+            <form>
+
+                <label class="item-input">
+                    &nbsp;<i class="icon ion-ios-person">&nbsp;&nbsp;&nbsp;</i>
+                    <input type="text" placeholder="Nombre del tarjetahabiente" ng-model="Form.card.name">
+                </label>
+
+                <label class="item-input">
+                    <i class="icon ion-card">&nbsp;&nbsp;&nbsp;</i>
+                    <input type="text" placeholder="Numero de tarjeta (16 Digitos)" ng-model="Form.card.number">
+                </label>
+
+                <div class="row DebitCardForm">
+                	<label class="DebitForm item-input">
+                    	<input class="DebitInput" type="text" placeholder="CVC (000)" ng-model="Form.card.cvc">
+                	</label>
+                	<label class="DebitForm item-input">
+                    	<input class="DebitInput" type="text" placeholder="Mes (00)" ng-model="Form.card.exp_month">
+                	</label>
+                	<label class="DebitForm item-input">
+                    	<input class="DebitInput" type="text" placeholder="Año (0000)" ng-model="Form.card.exp_year">
+                	</label>                	
+                </div>
+
+	         </form>
+        	
+        </div>
+
+        
+
+        <div ng-if="!ShowForm" class="ListCard card">
+
+            <ul class="list">
+                
+                <div class="item item-radio ListItem" ng-repeat="Card in ListPayMethods" >
+                    
+                    <label ng-click="SelectedPayMethod(Card)">
+                        <input type="radio" name="group">
+                        <i ng-if="Card.Selected" class="radio-icon ion-checkmark-circled"></i>
+                        <div class="row">
+                            <div class="col col-20 ProductItem">
+                                <img class="image DebitImage" src="img/{{Card.denomination}}.png">
+                            </div>
+                            <div class="col col-80 ProductItem"> XXXX-XXXX-XXXX-{{Card.termination}}</div>
+                        </div>
+
+                    </label>
+
+                </div>
+
+            </ul>
+        </div>
+        <button ng-if="!ShowForm" class="button button-block DebitAdd" ng-click="AddPayMethod()">
+           <i class="icon ion-plus-circled"></i> Agregar Nueva Tarjeta
+        </button>
+        
+        <br>
+
+        <h4 class="metodo-pago">Referencias para el repartidor</h4>
+        <div class="card RoundCard">
+            <label class="item item-input text">
+                <textarea placeholder="Núm. de casa, departamentento o referencias extras para la entrega." rows="3" ng-model="$parent.CoordsDenomination" ng-Required="true"></textarea>
+            </label>
+
+        </div>
+        <br>
+
+        <button class="button button-block RoundButton Primary" ng-click="MakeOrder()">
+            Realizar Pedido
+        </button>
+
+    </ion-content>
+
+</ion-view>

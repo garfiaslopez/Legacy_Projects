@@ -1,0 +1,1 @@
+include (../StudentGuide.pro)

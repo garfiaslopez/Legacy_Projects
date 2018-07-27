@@ -1,0 +1,132 @@
+!SESSION 2014-02-08 00:06:24.567 -----------------------------------------------
+eclipse.buildId=trunk
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=es_ES
+Framework arguments:  -keyring /Users/JoseGarfiasLopez/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/JoseGarfiasLopez/Dropbox/Developing BB -keyring /Users/JoseGarfiasLopez/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2014-02-08 00:06:26.025
+!MESSAGE No binding context exists for org.eclipse.ui.contexts.dialog
+
+!ENTRY org.eclipse.core.net 1 0 2014-02-08 00:06:27.208
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:07:05.281
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.buildActive,Build Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@613b4a,
+		,,true)" command directly
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-02-08 00:07:09.587
+!MESSAGE Indexed 'Project' (3 sources, 242 headers) in 5,45 sec: 17.255 declarations; 31.338 references; 133 unresolved inclusions; 399 syntax errors; 1.898 unresolved names (3,76%)
+
+!ENTRY org.eclipse.jface 2 0 2014-02-08 00:07:19.155
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-02-08 00:07:19.155
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1cb1408,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.rim.tad.tools.qml.core.editor.scope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1cb1408,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:07:34.194
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.buildActive,Build Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@613b4a,
+		,,true)" command directly
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:08:17.566
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.runActive,Run Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17d46b6,
+		,,true)" command directly
+
+!ENTRY com.qnx.tools.bbt.core 4 1 2014-02-08 00:08:19.573
+!MESSAGE Packaging failed:1
+Error: Unable to resolve path variable "workspace_loc"
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:10:00.453
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.runActive,Run Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17d46b6,
+		,,true)" command directly
+
+!ENTRY com.qnx.tools.bbt.core 4 1 2014-02-08 00:10:02.339
+!MESSAGE Packaging failed:1
+Error: Unable to resolve path variable "workspace_loc"
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-02-08 00:11:27.245
+!MESSAGE Indexed 'Project' (3 sources, 701 headers) in 22,95 sec: 82.927 declarations; 117.644 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:37:44.535
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.runActive,Run Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17d46b6,
+		,,true)" command directly
+
+!ENTRY com.qnx.tools.bbt.core 4 1 2014-02-08 00:37:51.112
+!MESSAGE Packaging failed:1
+Error: Unable to resolve path variable "workspace_loc"
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-02-08 00:38:20.741
+!MESSAGE Indexed 'Project' (3 sources, 701 headers) in 22,06 sec: 82.927 declarations; 117.644 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:38:23.721
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.buildActive,Build Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@613b4a,
+		,,true)" command directly
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 00:38:30.731
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.runActive,Run Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17d46b6,
+		,,true)" command directly
+
+!ENTRY com.qnx.tools.bbt.core 4 1 2014-02-08 00:38:32.646
+!MESSAGE Packaging failed:1
+Error: Unable to resolve path variable "workspace_loc"
+!SESSION 2014-02-08 01:46:36.003 -----------------------------------------------
+eclipse.buildId=trunk
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=es_ES
+Framework arguments:  -keyring /Users/JoseGarfiasLopez/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/JoseGarfiasLopez/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2014-02-08 01:46:55.835
+!MESSAGE No binding context exists for org.eclipse.ui.contexts.dialog
+
+!ENTRY org.eclipse.core.net 1 0 2014-02-08 01:47:08.288
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2014-02-08 01:56:17.511
+!MESSAGE Calling "Command(com.qnx.tools.ide.ui.e4.commands.runActive,Run Active Project,
+		,
+		Category(com.qnx.tools.bbt.ui.commands.bbtos,BlackBerry,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@188d364,
+		,,true)" command directly
+
+!ENTRY com.qnx.tools.bbt.core 4 1 2014-02-08 01:57:18.053
+!MESSAGE Packaging failed:1
+Error: Unable to resolve path variable "workspace_loc"

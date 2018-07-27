@@ -1,0 +1,42 @@
+{ 
+    "_id" : ObjectId("57e0207148f348763b1b422d"), 
+    "type" : "primary", 
+    "denomination" : "Tecate", 
+    "date" : ISODate("2016-09-08T23:32:49.280+0000"), 
+    "prices" : [
+        {
+            "quantity" : "6", 
+            "price" : NumberInt(100), 
+            "_id" : ObjectId("57e0207a48f348763b1b422e")
+        }
+    ], 
+    "__v" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("57e0208348f348763b1b422f"), 
+    "type" : "primary", 
+    "denomination" : "XX Lager", 
+    "date" : ISODate("2016-09-08T23:32:49.280+0000"), 
+    "prices" : [
+        {
+            "quantity" : "6", 
+            "price" : NumberInt(100), 
+            "_id" : ObjectId("57e0209848f348763b1b4231")
+        }
+    ], 
+    "__v" : NumberInt(1)
+}
+{ 
+    "_id" : ObjectId("57e0208f48f348763b1b4230"), 
+    "type" : "primary", 
+    "denomination" : "Indio", 
+    "date" : ISODate("2016-09-08T23:32:49.280+0000"), 
+    "prices" : [
+        {
+            "quantity" : "6", 
+            "price" : NumberInt(100), 
+            "_id" : ObjectId("57e020a048f348763b1b4232")
+        }
+    ], 
+    "__v" : NumberInt(1)
+}

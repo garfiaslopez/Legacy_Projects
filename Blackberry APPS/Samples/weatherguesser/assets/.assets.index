@@ -1,0 +1,82 @@
+1
+80
+720x720/InfoPage.qml
+720x720/WeatherPage/InlineActivityIndicator.qml
+ContinentCitiesPage.qml
+ContinentsPage.qml
+FavoritePage.qml
+images/icons/big/0.png
+images/icons/big/1.png
+images/icons/big/2.png
+images/icons/big/3.png
+images/icons/big/4.png
+images/icons/big/5.png
+images/icons/small/0.png
+images/icons/small/1.png
+images/icons/small/2.png
+images/icons/small/3.png
+images/icons/small/4.png
+images/icons/small/5.png
+images/info/background.png
+images/info/cloud.png
+images/info/sun.png
+images/menuicons/icon_browse.png
+images/menuicons/icon_continents.png
+images/menuicons/icon_favorites.png
+images/menuicons/icon_home.png
+images/menuicons/icon_info.png
+images/menuicons/icon_maxmin.png
+InfoPage.qml
+main.qml
+MaxMinPage.qml
+models/cities_europe_model.xml
+models/cities_favorites_model.xml
+models/continent_model.xml
+models/json/Alexandria.json
+models/json/Athens.json
+models/json/Bogota.json
+models/json/Brisbane.json
+models/json/Buenos Aires.json
+models/json/Cairo.json
+models/json/Canberra.json
+models/json/Chicago.json
+models/json/Copenhagen.json
+models/json/Johannesburg.json
+models/json/Khartoum.json
+models/json/Kiew.json
+models/json/Kinshasa.json
+models/json/Lagos.json
+models/json/London.json
+models/json/Madrid.json
+models/json/Malm%C3%B6.json
+models/json/McMurdo Station.json
+models/json/Melbourne.json
+models/json/Mexico City.json
+models/json/Miami.json
+models/json/Montvideo.json
+models/json/Moscow.json
+models/json/New Delhi.json
+models/json/New York.json
+models/json/Paris.json
+models/json/Quito.json
+models/json/Rio De Janiero.json
+models/json/Rome.json
+models/json/San Francisco.json
+models/json/Santiago.json
+models/json/Seoul.json
+models/json/Sydney.json
+models/json/The City of Atlantis.json
+models/json/Tijuana.json
+models/json/Tokyo.json
+models/json/Toronto.json
+models/json/Waterloo.json
+models/json/weather.json
+models/max_model.xml
+models/sql/weatherguesser.db
+models/weather.xml
+MoreInfoPage.qml
+WeatherPage/InlineActivityIndicator.qml
+WeatherPage/WeatherItem.qml
+WeatherPage/WeatherLoadItem.qml
+WeatherPage/WeatherPage.qml
+WeatherPage/WeatherTodayItem.qml

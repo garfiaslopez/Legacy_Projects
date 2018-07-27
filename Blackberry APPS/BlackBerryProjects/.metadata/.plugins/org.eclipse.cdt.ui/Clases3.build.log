@@ -1,0 +1,24 @@
+15:23:11 **** Build of configuration Simulator-Debug for project Clases3 ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate Clases3.pro
+Updating 'Clases3.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease Clases3.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/translations/Clases3.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/Clases3/x86'
+
+15:23:13 Build Finished (took 1s.595ms)
+

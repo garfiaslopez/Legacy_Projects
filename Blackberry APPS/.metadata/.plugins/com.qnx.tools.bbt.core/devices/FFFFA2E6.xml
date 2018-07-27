@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<device>
+    <hardware-model-full>BlackBerry All Touch [1280x768]</hardware-model-full>
+    <hardware-model>All Touch [1280x768]</hardware-model>
+    <os-version>10.2.1.1925</os-version>
+    <hardware-type>SIMULATOR</hardware-type>
+    <device-pin>0xFFFFA2E6</device-pin>
+    <hardware-family>Simulator</hardware-family>
+</device>

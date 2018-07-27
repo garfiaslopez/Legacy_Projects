@@ -1,0 +1,21 @@
+<ion-view title="Faltan Chelas">
+
+    <div data-tap-disabled="true" ng-class="ShowVendorDetail ? 'DetailMap' : 'FullMap' " id="map"></div>
+
+	<ion-footer-bar ng-if="ShowVendorDetail" class="FooterVendor">
+		<div class="row row-center">
+			<div class="col col-120">
+				<p class="Subtitle" style="margin-bottom: -8%">{{VendorToServe.name}}</p>
+			</div>
+		</div>
+		<div class="row row-center actions">
+			
+				<a class="button Primary action" ng-click="SmsToVendor()"><i class="icon ion-chatbox-working"></i></a>
+				<a href="tel:+52-{{VendorToServe.phone}}" class="button Primary action"><i class="icon ion-ios-telephone"></i></a>
+			
+			
+		</div>
+	</ion-footer-bar>
+
+</ion-view>
+

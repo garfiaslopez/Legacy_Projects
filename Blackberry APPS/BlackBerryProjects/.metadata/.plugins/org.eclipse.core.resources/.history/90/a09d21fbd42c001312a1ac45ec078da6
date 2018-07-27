@@ -1,0 +1,11 @@
+<root>
+
+    <titulo title="Cuadrado"        image="../Imagenes/Cuadrado.png"        area="L x L"          perimetro="L x 4"  />
+ 	<titulo title="Circulo"         image="../Imagenes/Circulo.png"         area="π x d"          perimetro="π x r^2"  /> 
+ 	<titulo title="Rectangulo"      image="../Imagenes/Rectangulo.png"        area="b x a"          perimetro="Lx4"  />
+ 	<titulo title="Triangulo"       image="../Imagenes/Triangulo.png"        area="LxL"          perimetro="Lx4"  />
+ 	<titulo title="Rombo"           image="../Imagenes/Rombo.png"        area="LxL"          perimetro="Lx4"  />
+ 	<titulo title="Trapecio"        image="../Imagenes/Trapecio.png"        area="LxL"          perimetro="Lx4"  />
+ 
+ 	
+</root>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+
+        <ion-nav-bar class="bar-positive Primary">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+
+        <ion-content>
+
+            <div class="ProfileMenu row">
+                <img class="ProfileImage" src="../img/MainIcon.png" alt="Vita Icon">
+                <div class="col">
+                    <br>
+                    
+                    <h3 class="ProfileName">Jose Garfias</h3>
+                    <h4 class="ProfileEmail">garfiaslopez@hotmail.com</h4>
+                </div>
+            </div>
+
+            <ion-list>
+                <ion-item menu-close href="#/app/myvita">
+                        My Vita
+                </ion-item>
+                <ion-item menu-close href="#/app/scanvita">
+                        Scan Vita
+                </ion-item>
+                <ion-item menu-close href="#/app/contacts">
+                        Contacts
+                </ion-item>
+                <ion-item menu-close href="#/app/help">
+                        Help
+                </ion-item>
+                <ion-item menu-close ng-click="login()">
+                    Close Session
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>

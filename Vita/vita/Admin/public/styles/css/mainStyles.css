@@ -1,0 +1,160 @@
+/*
+*   Main styles
+*/
+/* line 26, ./public/styles/mainStyles.scss */
+.blue {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* line 30, ./public/styles/mainStyles.scss */
+.lightblue {
+  background-color: #3E99ED;
+  color: white;
+}
+
+/* line 34, ./public/styles/mainStyles.scss */
+.blackblue {
+  background-color: #0B57A7;
+  color: white;
+}
+
+/* line 38, ./public/styles/mainStyles.scss */
+.orange {
+  background-color: #FC6B47;
+  color: white;
+}
+
+/* line 42, ./public/styles/mainStyles.scss */
+.green {
+  background-color: #2FA14A;
+  color: white;
+}
+
+/* line 46, ./public/styles/mainStyles.scss */
+.blackgreen {
+  background-color: #0F4F1D;
+  color: white;
+}
+
+/* line 50, ./public/styles/mainStyles.scss */
+.pink {
+  background-color: #E91E63;
+  color: white;
+}
+
+/* line 54, ./public/styles/mainStyles.scss */
+.teal {
+  background-color: #009688;
+  color: white;
+}
+
+/* line 58, ./public/styles/mainStyles.scss */
+.brown {
+  background-color: #795548;
+  color: white;
+}
+
+/* line 62, ./public/styles/mainStyles.scss */
+.bluegrey {
+  background-color: #607D8B;
+  color: white;
+}
+
+/* line 66, ./public/styles/mainStyles.scss */
+.lightred {
+  background-color: #F4383E;
+  color: white;
+}
+
+/* line 70, ./public/styles/mainStyles.scss */
+.red {
+  background-color: #9B2629;
+  color: white;
+}
+
+/* line 74, ./public/styles/mainStyles.scss */
+.selected {
+  color: #2196F3;
+}
+
+/* line 80, ./public/styles/mainStyles.scss */
+body {
+  color: #333;
+  background-color: #FFFFFF;
+}
+
+/* line 85, ./public/styles/mainStyles.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 90, ./public/styles/mainStyles.scss */
+#toolbar {
+  color: #FFFFFF;
+  background-color: #FE6800;
+}
+
+/* line 97, ./public/styles/mainStyles.scss */
+.DashboardIcon {
+  color: white;
+}
+
+/* line 101, ./public/styles/mainStyles.scss */
+#ProfilePhoto {
+  max-height: 120px;
+  max-width: 200px;
+}
+
+/* line 107, ./public/styles/mainStyles.scss */
+#PrimaryButton {
+  background-color: #36AD5C;
+}
+
+/* line 110, ./public/styles/mainStyles.scss */
+#SecondaryButton {
+  background-color: #AD3836;
+}
+
+/* line 114, ./public/styles/mainStyles.scss */
+#LogoAdmin {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 119, ./public/styles/mainStyles.scss */
+.md-tile-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 30px;
+  text-overflow: ellipsis;
+}
+
+/* line 127, ./public/styles/mainStyles.scss */
+.md-tile-content h3 {
+  margin: 0 0 3px 0;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+/* line 132, ./public/styles/mainStyles.scss */
+.md-tile-content h4 {
+  margin: 0 0 3px 0;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* line 137, ./public/styles/mainStyles.scss */
+.md-tile-content p {
+  margin: 0 0 3px 0;
+  font-size: 0.75em;
+}
+
+/*
+* Import base files
+*/
+
+

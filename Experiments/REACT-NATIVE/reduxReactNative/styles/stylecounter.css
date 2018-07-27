@@ -1,0 +1,25 @@
+.container {
+    flex:1;
+    background-color: #F5FCFF;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    font-size: 20;
+    text-align: center;
+    margin: 10;
+}
+.description {
+  margin-bottom: 20;
+  font-size: 25;
+  text-align: center;
+  color: #03A9F4;
+}
+.button {
+    height: 60;
+    width: 60;
+    margin-bottom: 10;
+}
+.progress {
+    width: 250
+}

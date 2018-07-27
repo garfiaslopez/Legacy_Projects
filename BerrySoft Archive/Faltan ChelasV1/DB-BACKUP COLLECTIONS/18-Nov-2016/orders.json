@@ -1,0 +1,1815 @@
+{ 
+    "_id" : ObjectId("57ce1329a8bfdde953170d70"), 
+    "order_id" : NumberInt(1), 
+    "paymethod" : "card_iqX4QPpWLLkBQsG5", 
+    "total" : NumberInt(280), 
+    "user_id" : ObjectId("57cdf605752e22596cc06030"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Abajo de Huaweii\n", 
+    "destiny" : {
+        "cord" : [
+            -99.26740027964115, 
+            19.36148408310921
+        ], 
+        "denomination" : "Av Sta Fe 443, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce1329a8bfdde953170d73")
+        }, 
+        {
+            "price" : NumberInt(86), 
+            "denomination" : "Victoria", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce1329a8bfdde953170d72")
+        }, 
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce1329a8bfdde953170d71")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce213ba8bfdde953170d74"), 
+    "order_id" : NumberInt(2), 
+    "paymethod" : "card_iqX4QPpWLLkBQsG5", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57cdf605752e22596cc06030"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "En la carretera ", 
+    "destiny" : {
+        "cord" : [
+            -99.2735157161951, 
+            19.3588861687036
+        ], 
+        "denomination" : ""
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce213ba8bfdde953170d75")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce229ba8bfdde953170d76"), 
+    "order_id" : NumberInt(3), 
+    "paymethod" : "card_iqX4QPpWLLkBQsG5", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57cdf605752e22596cc06030"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "En la carretera", 
+    "destiny" : {
+        "cord" : [
+            -99.26892008632421, 
+            19.3629448184571
+        ], 
+        "denomination" : ""
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce229ba8bfdde953170d77")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce380da8bfdde953170d7a"), 
+    "order_id" : NumberInt(4), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Depto 11\n", 
+    "destiny" : {
+        "cord" : [
+            -99.17641740292311, 
+            19.43258783441792
+        ], 
+        "denomination" : "Lafayette 5, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce380da8bfdde953170d7b")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce38d5a8bfdde953170d7c"), 
+    "order_id" : NumberInt(5), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Depto 11\n", 
+    "destiny" : {
+        "cord" : [
+            -99.17681973427534, 
+            19.4330861280499
+        ], 
+        "denomination" : "Lafayette 26, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce38d5a8bfdde953170d7d")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce392ea8bfdde953170d7e"), 
+    "order_id" : NumberInt(6), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17683213949203, 
+            19.43307885600915
+        ], 
+        "denomination" : "Lafayette 26, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce392ea8bfdde953170d7f")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57ce39d0a8bfdde953170d80"), 
+    "order_id" : NumberInt(7), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Nana", 
+    "destiny" : {
+        "cord" : [
+            -99.17664606124163, 
+            19.43295807685008
+        ], 
+        "denomination" : "Lafayette 13, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce39d0a8bfdde953170d81")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce3a4aa8bfdde953170d82"), 
+    "order_id" : NumberInt(8), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17709331959486, 
+            19.43325085549425
+        ], 
+        "denomination" : "Shakespeare 178, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce3a4aa8bfdde953170d83")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57ce3ae8a8bfdde953170d84"), 
+    "order_id" : NumberInt(9), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T00:43:59.320+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Portón azul", 
+    "destiny" : {
+        "cord" : [
+            -99.17824331671, 
+            19.42377100931839
+        ], 
+        "denomination" : "Paseo de la Reforma 750, Anzures, 11590 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce3ae8a8bfdde953170d85")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce3db3f693488b1489e3d5"), 
+    "order_id" : NumberInt(10), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T03:51:56.361+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Portón azul.", 
+    "destiny" : {
+        "cord" : [
+            -99.17683616280556, 
+            19.42532604302797
+        ], 
+        "denomination" : "Río Ródano 814, Anzures, 11590 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce3db3f693488b1489e3d6")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce3f2df693488b1489e3d7"), 
+    "order_id" : NumberInt(11), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-06T03:51:56.361+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "aditionalInfo" : "Casa 11", 
+    "destiny" : {
+        "cord" : [
+            -99.17679844272728, 
+            19.43305850985284
+        ], 
+        "denomination" : "Shakespeare 178, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce3f2df693488b1489e3d8")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "vendor_id" : ObjectId("57ce3732a8bfdde953170d79")
+}
+{ 
+    "_id" : ObjectId("57ce40a367b0731419bde942"), 
+    "order_id" : NumberInt(12), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:05:07.370+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "aditionalInfo" : "Portón azul.", 
+    "destiny" : {
+        "cord" : [
+            -99.16698675602674, 
+            19.42706950964754
+        ], 
+        "denomination" : "Paseo de la Reforma 569, Juárez, 06600 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce40a367b0731419bde943")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "vendor_id" : ObjectId("57ce3732a8bfdde953170d79")
+}
+{ 
+    "_id" : ObjectId("57ce47fd2d47584c23490208"), 
+    "order_id" : NumberInt(13), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:34:44.108+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Puerta grande verde.", 
+    "destiny" : {
+        "cord" : [
+            -99.17578507214785, 
+            19.42350350913608
+        ], 
+        "denomination" : "Paseo de la Reforma 10, Cuauhtémoc, 06500 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce47fd2d47584c23490209")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce527da1cc3d882b207d68"), 
+    "order_id" : NumberInt(14), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Puerta gris", 
+    "destiny" : {
+        "cord" : [
+            -99.17783930897713, 
+            19.53556167723254
+        ], 
+        "denomination" : "Cuernavaca 104, Hab Valle Ceylan, 54150 Tlalnepantla, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce527da1cc3d882b207d69")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce5888a1cc3d882b207d6a"), 
+    "order_id" : NumberInt(15), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17796235531569, 
+            19.5355408228374
+        ], 
+        "denomination" : "Tlaxcala 105, Hab Valle Ceylan, 54150 Tlalnepantla, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce5888a1cc3d882b207d6b")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57ce5916a1cc3d882b207d6c"), 
+    "order_id" : NumberInt(16), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.18426755815744, 
+            19.53803416787092
+        ], 
+        "denomination" : "Calle Monterrey 241, Hab Valle Ceylan, 54150 Tlalnepantla, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce5916a1cc3d882b207d6d")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57ce59c5a1cc3d882b207d6e"), 
+    "order_id" : NumberInt(17), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.18399799615145, 
+            19.53418591333261
+        ], 
+        "denomination" : "Av Mario Colin, Patios de Ffccinfraestructura, Tlalnepantla, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ce59c5a1cc3d882b207d6f")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57ceffd5a1cc3d882b207d74"), 
+    "order_id" : NumberInt(18), 
+    "paymethod" : "card_jeUGLdoe879Q4bhD", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57cdf1d1752e22596cc06024"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Las necesito en content por favor. Si te tardas más de media hora va a haber madrazos. ", 
+    "destiny" : {
+        "cord" : [
+            -99.26762019162193, 
+            19.36123073308367
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57ceffd5a1cc3d882b207d75")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57cf002ba1cc3d882b207d76"), 
+    "order_id" : NumberInt(19), 
+    "paymethod" : "card_jeUGLdoe879Q4bhD", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57cdf1d1752e22596cc06024"), 
+    "date" : ISODate("2016-09-06T04:58:01.124+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "destiny" : {
+        "cord" : [
+            -99.26762019162193, 
+            19.36123073308367
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57cf002ba1cc3d882b207d77")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional.", 
+    "vendor_id" : ObjectId("57cdf6ab752e22596cc06032")
+}
+{ 
+    "_id" : ObjectId("57d1ed071b6b9b696ccb1042"), 
+    "order_id" : NumberInt(20), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T22:57:02.413+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.18525863438845, 
+            19.53438845533153
+        ], 
+        "denomination" : "Av Mario Colin, Patios de Ffccinfraestructura, Tlalnepantla, Méx., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1ed071b6b9b696ccb1043")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1edd01b6b9b696ccb1044"), 
+    "order_id" : NumberInt(21), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T22:57:02.413+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.19411931186914, 
+            19.53067693557417
+        ], 
+        "denomination" : "Av. de los Ejidos 6, Hab Los Reyes Ixtacala Barrio de los Árboles/Barrio de los Héroes, 54090 Tlalnepantla, Méx., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1edd01b6b9b696ccb1045")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1eec21b6b9b696ccb1046"), 
+    "order_id" : NumberInt(22), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T22:57:02.413+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.19224143028259, 
+            19.53759370393964
+        ], 
+        "denomination" : "Felipe Berriozabal 37, San Javier, 54030 Tlalnepantla de Baz, Estado de México, México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1eec21b6b9b696ccb1047")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f0052178776d837c9a54"), 
+    "order_id" : NumberInt(23), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.18533977121115, 
+            19.53516291545267
+        ], 
+        "denomination" : "Estacion de Tren Suburbano Tlalnepantla, Chilpancingo, Patios de Ffccinfraestructura, Ciudad de México, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f0052178776d837c9a55")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f0df2178776d837c9a56"), 
+    "order_id" : NumberInt(24), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.19247478246689, 
+            19.54423086876779
+        ], 
+        "denomination" : "Calle Aculco 40, Hab la Romana, 54030 Tlalnepantla, Méx., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f0df2178776d837c9a57")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f1352178776d837c9a58"), 
+    "order_id" : NumberInt(25), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(110), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.15141385048628, 
+            19.52441114311714
+        ], 
+        "denomination" : "De Los Esteros 38, Acueducto de Guadalupe, 07790 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(90), 
+            "denomination" : "Heineken", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f1352178776d837c9a59")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f21f2178776d837c9a5a"), 
+    "order_id" : NumberInt(26), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(106), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.15129315108061, 
+            19.52232049028793
+        ], 
+        "denomination" : "Av. Acueducto Pte., Guadalupe Proletaria, 07680 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(86), 
+            "denomination" : "Victoria", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f21f2178776d837c9a5b")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f2af2178776d837c9a5c"), 
+    "order_id" : NumberInt(27), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.15155868977308, 
+            19.52224085787395
+        ], 
+        "denomination" : "Tlalnepantla 459, Guadalupe Proletaria, 07680 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f2af2178776d837c9a5d")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f34a2178776d837c9a5e"), 
+    "order_id" : NumberInt(28), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(104), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.1515694, 
+            19.522213
+        ], 
+        "denomination" : "Tlalnepantla, Guadalupe Proletaria, 07680 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(84), 
+            "denomination" : "Corona", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f34a2178776d837c9a5f")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d1f4c02178776d837c9a60"), 
+    "order_id" : NumberInt(29), 
+    "paymethod" : "card_V4PRm14Dg9CMJB6g", 
+    "total" : NumberInt(106), 
+    "user_id" : ObjectId("57ce0b19752e22596cc06035"), 
+    "date" : ISODate("2016-09-08T23:08:16.592+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.1515694, 
+            19.522213
+        ], 
+        "denomination" : "Tlalnepantla, Guadalupe Proletaria, 07680 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(86), 
+            "denomination" : "Victoria", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d1f4c02178776d837c9a61")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57d2128b48f348763b1b4204"), 
+    "order_id" : NumberInt(30), 
+    "paymethod" : "card_vyMx4n1UrYy8tqgX", 
+    "total" : NumberInt(106), 
+    "user_id" : ObjectId("57d2120e48f348763b1b4203"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17235319999999, 
+            19.415051
+        ], 
+        "denomination" : "Juan de la Barrera 9, Condesa, 06140 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(86), 
+            "denomination" : "Victoria", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57d2128b48f348763b1b4205")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0536948f348763b1b4236"), 
+    "order_id" : NumberInt(31), 
+    "paymethod" : "card_UpCSLY75EFQVuZx9", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57e052fb48f348763b1b4235"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.2676205560565, 
+            19.36116144166199
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0536948f348763b1b4237")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e053cc48f348763b1b4238"), 
+    "order_id" : NumberInt(32), 
+    "paymethod" : "card_UpCSLY75EFQVuZx9", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57e052fb48f348763b1b4235"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26761452108622, 
+            19.36116903323278
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e053cc48f348763b1b4239")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0540948f348763b1b423b"), 
+    "order_id" : NumberInt(33), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(320), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "RedBox\n", 
+    "destiny" : {
+        "cord" : [
+            -99.2676980048418, 
+            19.36146826736687
+        ], 
+        "denomination" : "Av Sta Fe 443, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0540948f348763b1b423e")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0540948f348763b1b423d")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0540948f348763b1b423c")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57e0544848f348763b1b423f"), 
+    "order_id" : NumberInt(34), 
+    "paymethod" : "card_UpCSLY75EFQVuZx9", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57e052fb48f348763b1b4235"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26747638732195, 
+            19.36090997067951
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0544848f348763b1b4240")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0547a48f348763b1b4241"), 
+    "order_id" : NumberInt(35), 
+    "paymethod" : "card_UpCSLY75EFQVuZx9", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57e052fb48f348763b1b4235"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26739692687988, 
+            19.3611038722386
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., México"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0547a48f348763b1b4242")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0556148f348763b1b4243"), 
+    "order_id" : NumberInt(36), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(420), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26847618073225, 
+            19.36213695561407
+        ], 
+        "denomination" : "Prolongacion Reforma, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0556148f348763b1b4246")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(2), 
+            "_id" : ObjectId("57e0556148f348763b1b4245")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0556148f348763b1b4244")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0558f48f348763b1b4247"), 
+    "order_id" : NumberInt(37), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(320), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26739424467087, 
+            19.36126139731586
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0558f48f348763b1b424a")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0558f48f348763b1b4249")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0558f48f348763b1b4248")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e055b048f348763b1b424b"), 
+    "order_id" : NumberInt(38), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(320), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.26717631518841, 
+            19.36140658595711
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e055b048f348763b1b424e")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e055b048f348763b1b424d")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e055b048f348763b1b424c")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e0572248f348763b1b424f"), 
+    "order_id" : NumberInt(39), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(320), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-08T23:32:49.346+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "aditionalInfo" : "En redbox", 
+    "destiny" : {
+        "cord" : [
+            -99.26725120001042, 
+            19.36243321994625
+        ], 
+        "denomination" : "Mina la Mexicana 1130, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0572248f348763b1b4252")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0572248f348763b1b4251")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e0572248f348763b1b4250")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57e057720a1c135e8d84b6d8"), 
+    "order_id" : NumberInt(40), 
+    "paymethod" : "card_SJJL44Swezrfdr7c", 
+    "total" : NumberInt(320), 
+    "user_id" : ObjectId("57c4c7a9752e22596cc06019"), 
+    "date" : ISODate("2016-09-19T21:23:36.589+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "destiny" : {
+        "cord" : [
+            -99.26689736545086, 
+            19.36169000393442
+        ], 
+        "denomination" : "Av Sta Fe 449, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e057720a1c135e8d84b6db")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e057720a1c135e8d84b6da")
+        }, 
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57e057720a1c135e8d84b6d9")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional.", 
+    "vendor_id" : ObjectId("57cdf6ab752e22596cc06032")
+}
+{ 
+    "_id" : ObjectId("57e6285d0a1c135e8d84b6ef"), 
+    "order_id" : NumberInt(41), 
+    "paymethod" : "card_1z1yagb2YqtUffGj", 
+    "total" : NumberInt(420), 
+    "user_id" : ObjectId("57e627d00a1c135e8d84b6ee"), 
+    "date" : ISODate("2016-09-19T21:23:36.589+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17165849357843, 
+            19.40254827646945
+        ], 
+        "denomination" : "Agrarismo 34, Escandón I Secc, 11800 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(4), 
+            "_id" : ObjectId("57e6285d0a1c135e8d84b6f0")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e628c20a1c135e8d84b6f1"), 
+    "order_id" : NumberInt(42), 
+    "paymethod" : "card_1z1yagb2YqtUffGj", 
+    "total" : NumberInt(420), 
+    "user_id" : ObjectId("57e627d00a1c135e8d84b6ee"), 
+    "date" : ISODate("2016-09-19T21:23:36.589+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.1718415, 
+            19.402223
+        ], 
+        "denomination" : "Av Progreso 235, Escandón II Secc, 11800 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(4), 
+            "_id" : ObjectId("57e628c20a1c135e8d84b6f2")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57e62af90a1c135e8d84b6f3"), 
+    "order_id" : NumberInt(43), 
+    "paymethod" : "card_1z1yagb2YqtUffGj", 
+    "total" : NumberInt(420), 
+    "user_id" : ObjectId("57e627d00a1c135e8d84b6ee"), 
+    "date" : ISODate("2016-09-19T21:23:36.589+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17185295373201, 
+            19.40227093806251
+        ], 
+        "denomination" : "Av Progreso 235, Escandón II Secc, 11800 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "price" : NumberInt(100), 
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(4), 
+            "_id" : ObjectId("57e62af90a1c135e8d84b6f4")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57f6f03b50c3ff25e6b5a94d"), 
+    "order_id" : NumberInt(44), 
+    "paymethod" : "card_tXaafEXatKW7uWZp", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f6ef6e50c3ff25e6b5a94c"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "Dep. BGH01\n", 
+    "destiny" : {
+        "cord" : [
+            -99.2005686, 
+            19.4431769
+        ], 
+        "denomination" : "Lago Andromaco 61, Granada, 11529 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57f6f03b50c3ff25e6b5a94e")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57f7db3350c3ff25e6b5a951"), 
+    "order_id" : NumberInt(45), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "aditionalInfo" : "Pb1 La Oficina se llama RedBox ", 
+    "destiny" : {
+        "cord" : [
+            -99.26777210086584, 
+            19.36109691329593
+        ], 
+        "denomination" : "Av Sta Fe 440, Lomas de Santa Fe, Contadero, 05349 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57f7db3350c3ff25e6b5a952")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "vendor_id" : ObjectId("57f7d47950c3ff25e6b5a950")
+}
+{ 
+    "_id" : ObjectId("57fcffb650c3ff25e6b5a963"), 
+    "order_id" : NumberInt(46), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.26748141646385, 
+            19.36113898326297
+        ], 
+        "denomination" : "KMD ARCHITECTS, Av Sta Fe 440-1002, Lomas de Santa Fe, Contadero, 05348 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57fcffb650c3ff25e6b5a964")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("57fd003550c3ff25e6b5a965"), 
+    "order_id" : NumberInt(47), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "destiny" : {
+        "cord" : [
+            -99.26734780901974, 
+            19.36096779072598
+        ], 
+        "denomination" : "Paseo de los Arquitectos, Lomas de Santa Fe, Contadero, 01219 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("57fd003550c3ff25e6b5a966")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional.", 
+    "vendor_id" : ObjectId("57f7d47950c3ff25e6b5a950")
+}
+{ 
+    "_id" : ObjectId("57fddaab50c3ff25e6b5a968"), 
+    "order_id" : NumberInt(48), 
+    "paymethod" : "card_B8XvaT7mQszEADeh", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57fdbf1550c3ff25e6b5a967"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "", 
+    "destiny" : {
+        "cord" : [
+            -99.22766345, 
+            19.34558753
+        ], 
+        "denomination" : "R�o Grijalva 12 Ciudad de M�xico M�xico"
+    }, 
+    "products" : [
+        {
+            "units" : NumberInt(1), 
+            "quantity" : NumberInt(6), 
+            "denomination" : "Tecate", 
+            "price" : NumberInt(100), 
+            "_id" : ObjectId("57fddaab50c3ff25e6b5a969")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57fddb4750c3ff25e6b5a96a"), 
+    "order_id" : NumberInt(49), 
+    "paymethod" : "card_B8XvaT7mQszEADeh", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57fdbf1550c3ff25e6b5a967"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "", 
+    "destiny" : {
+        "cord" : [
+            -99.22768414020538, 
+            19.345555901527405
+        ], 
+        "denomination" : "R�o Grijalva 12 Ciudad de M�xico M�xico"
+    }, 
+    "products" : [
+        {
+            "units" : NumberInt(1), 
+            "quantity" : NumberInt(6), 
+            "denomination" : "Tecate", 
+            "price" : NumberInt(100), 
+            "_id" : ObjectId("57fddb4750c3ff25e6b5a96b")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("581bdbea50c3ff25e6b5a993"), 
+    "order_id" : NumberInt(50), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.17294675096225, 
+            19.41563462062992
+        ], 
+        "denomination" : "Calle Atlixco 9, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdbea50c3ff25e6b5a994")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("581bdc1a50c3ff25e6b5a995"), 
+    "order_id" : NumberInt(51), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.17293187230825, 
+            19.41565347912639
+        ], 
+        "denomination" : "Calle Atlixco 9, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdc1a50c3ff25e6b5a996")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("581bdc5550c3ff25e6b5a997"), 
+    "order_id" : NumberInt(52), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "destiny" : {
+        "cord" : [
+            -99.17291712015867, 
+            19.41564778735345
+        ], 
+        "denomination" : "Calle Atlixco 9, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdc5550c3ff25e6b5a998")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional.", 
+    "vendor_id" : ObjectId("581bdb9a50c3ff25e6b5a992")
+}
+{ 
+    "_id" : ObjectId("581bdcea50c3ff25e6b5a999"), 
+    "order_id" : NumberInt(53), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.17293690145016, 
+            19.41564841977268
+        ], 
+        "denomination" : "Calle Atlixco 9, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Indio", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdcea50c3ff25e6b5a99a")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("581bdcff50c3ff25e6b5a99b"), 
+    "order_id" : NumberInt(54), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.17288895696402, 
+            19.41565031703034
+        ], 
+        "denomination" : "Calle Atlixco 12-14, Condesa, Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdcff50c3ff25e6b5a99c")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("581bde7d50c3ff25e6b5a99d"), 
+    "order_id" : NumberInt(55), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Canceled", 
+    "destiny" : {
+        "cord" : [
+            -99.17290101519602, 
+            19.41547779405895
+        ], 
+        "denomination" : "Calle Atlixco 14, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bde7d50c3ff25e6b5a99e")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("581bdea950c3ff25e6b5a99f"), 
+    "order_id" : NumberInt(56), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17292684316635, 
+            19.41560320179187
+        ], 
+        "denomination" : "Calle Atlixco 9, Condesa, 06140 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("581bdea950c3ff25e6b5a9a0")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("5820f9fe50c3ff25e6b5a9a7"), 
+    "order_id" : NumberInt(57), 
+    "paymethod" : "src_2fTZDv2TiCZX2EeSf", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("5820f72e50c3ff25e6b5a9a5"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "aditionalInfo" : "abaji del puenre", 
+    "destiny" : {
+        "cord" : [
+            -99.18194878846407, 
+            19.437617178467097
+        ], 
+        "denomination" : "Calzada General Mariano Escobedo & Avenida Ej�rcito Nacional Ciudad de M�xico M�xico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Tecate", 
+            "price" : NumberInt(100), 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("5820f9fe50c3ff25e6b5a9a8")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5820fbf550c3ff25e6b5a9a9"), 
+    "order_id" : NumberInt(58), 
+    "paymethod" : "card_1341pbMVLNbsQDTG", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("57f7d25f50c3ff25e6b5a94f"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : true, 
+    "status" : "Normal", 
+    "aditionalInfo" : "", 
+    "destiny" : {
+        "cord" : [
+            -99.17120419442655, 
+            19.413911471094988
+        ], 
+        "denomination" : "Avenida Nuevo Le�n 48A Ciudad de M�xico M�xico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "XX Lager", 
+            "price" : NumberInt(100), 
+            "quantity" : NumberInt(6), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("5820fbf550c3ff25e6b5a9aa")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "vendor_id" : ObjectId("581bdb9a50c3ff25e6b5a992")
+}
+{ 
+    "_id" : ObjectId("5826300b50c3ff25e6b5a9b4"), 
+    "order_id" : NumberInt(59), 
+    "paymethod" : "card_2fUrCtXmR74Hs3m4J", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("58262f7f50c3ff25e6b5a9b3"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.19024117290974, 
+            19.43831400871998
+        ], 
+        "denomination" : "Av Ejército Nacional 499, Granada, 11520 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("5826300b50c3ff25e6b5a9b5")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("582630e050c3ff25e6b5a9b6"), 
+    "order_id" : NumberInt(60), 
+    "paymethod" : "card_2fUrCtXmR74Hs3m4J", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("58262f7f50c3ff25e6b5a9b3"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "NotAccepted", 
+    "destiny" : {
+        "cord" : [
+            -99.17686901986599, 
+            19.42455485187932
+        ], 
+        "denomination" : "Cto. Interior Melchor Ocampo 475, Anzures, 11590 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("582630e050c3ff25e6b5a9b7")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional."
+}
+{ 
+    "_id" : ObjectId("5826315650c3ff25e6b5a9b8"), 
+    "order_id" : NumberInt(61), 
+    "paymethod" : "card_2fUrCtXmR74Hs3m4J", 
+    "total" : NumberInt(120), 
+    "user_id" : ObjectId("58262f7f50c3ff25e6b5a9b3"), 
+    "date" : ISODate("2016-10-05T07:54:58.523+0000"), 
+    "isPaid" : false, 
+    "status" : "Normal", 
+    "destiny" : {
+        "cord" : [
+            -99.15879528969526, 
+            19.43149069774543
+        ], 
+        "denomination" : "Paseo de la Reforma 121, Tabacalera, 06030 Ciudad de México, D.F., Mexico"
+    }, 
+    "products" : [
+        {
+            "denomination" : "Tecate", 
+            "quantity" : NumberInt(6), 
+            "price" : NumberInt(100), 
+            "units" : NumberInt(1), 
+            "_id" : ObjectId("5826315650c3ff25e6b5a9b9")
+        }
+    ], 
+    "__v" : NumberInt(0), 
+    "aditionalInfo" : "Sin Informacion Adicional.", 
+    "vendor_id" : ObjectId("581bdb9a50c3ff25e6b5a992")
+}

@@ -1,0 +1,44 @@
+    <section layout="column">
+        
+		 
+		<div flex layout="row" layout-sm="column" layout-align="left">
+
+        	<md-button flex="15" id="primarybtn" ng-click="Vendor.AddVendor()" class="md-raised md-primary">Agregar</md-button>
+
+		</div>
+		<md-content>
+            <md-data-table-container>
+                <table md-data-table md-progress="Vendor.isLoading">
+                    <thead md-order="date" md-trigger="onOrderChange">
+                        <tr>
+                            <th name="Nombre"></th>
+                            <th name="Telefono"></th>
+                            <th name="Ubicación"></th>
+                            <th numeric name="Ventas"></th>
+                            <th numeric name="$"></th>
+                            <th numeric name="Calif"></th>
+                            <th numeric name="Acciones"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr md-auto-select ng-repeat="VendorDB in Vendor.VendorsOnDB">
+                            <td>{{VendorDB.name}}</td>
+                            <td>{{VendorDB.phone}}</td>
+                            <td>{{VendorDB.loc.denomination}}</td>
+                            <td>{{VendorDB.name}}</td>
+                            <td>{{VendorDB.name}}</td>
+                            <td>{{VendorDB.name}}</td>
+                            <td>
+                                <md-icon md-svg-icon="info" aria-label="detail" ng-click="Vendor.Detail(VendorDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-data-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{VendorDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+
+    </section>                                  

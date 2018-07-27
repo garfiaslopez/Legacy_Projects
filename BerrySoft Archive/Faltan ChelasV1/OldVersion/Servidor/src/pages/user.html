@@ -1,0 +1,38 @@
+    <section layout="column">
+        
+		<md-content>
+            <md-data-table-container>
+                <table md-data-table md-progress="User.isLoading">
+                    <thead md-order="date" md-trigger="onOrderChange">
+                        <tr>
+                            <th name="Nombre"></th>
+                            <th name="Email"></th>
+                            <th name="Telefono"></th>
+                            <th numeric name="Compras"></th>
+                            <th numeric name="$"></th>
+                            <th numeric name="Calif"></th>
+                            <th numeric name="Acciones"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr md-auto-select ng-repeat="UserDB in User.UsersOnDB">
+                            <td>{{UserDB.name}}</td>
+                            <td>{{UserDB.email.address}}</td>
+                            <td>{{UserDB.name}}</td>
+                            <td>{{UserDB.name}}</td>
+                            <td>{{UserDB.denomination}}</td>
+                            <td>{{UserDB.total | number: 1}}</td>
+                            <td>
+                                <md-icon md-svg-icon="delete" aria-label="delete" ng-click="User.Delete(UserDB)" class="md-secondary md-hue-3"></md-icon>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-data-table-container>
+
+            <md-data-table-pagination md-limit="10" md-page="1" md-total="{{UserDB.length}}" md-trigger="onPaginationChange"></md-data-table-pagination>
+
+        </md-content>
+
+
+    </section>                                  

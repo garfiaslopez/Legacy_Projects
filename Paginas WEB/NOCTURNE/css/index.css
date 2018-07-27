@@ -1,0 +1,354 @@
+
+/*Navbar*/ 
+.navbar-inverse { 
+    background-color:transparent;
+	border-top-color:transparent;
+  	border-right-color: transparent;
+  	border-bottom-color: transparent;
+  	border-left-color: transparent;
+	color: white;
+	opacity: 0.5;
+} 
+
+#navbarColor{
+	color: #5ac7ed;
+}
+
+
+/*color del header*/
+header{
+	background-color: #1F1F1F;
+}
+
+
+/*BANNER*/
+#banner{
+
+	 width: 100%;
+	 height: 250px;
+}
+
+
+/*Logo Responsivo*/
+#logo{
+	margin-left: 50px;
+}
+@media(max-width: 768px){
+    #logo{
+    }
+}
+
+
+
+
+/*CAROUSEL*/
+
+#carousel {
+    width: auto;
+    height: auto;
+}
+
+.carousel-caption {
+	right: 20%;
+	left: 20%;
+	padding-bottom: 0px;
+}
+
+.carousel-indicators {
+	bottom: 5px;
+}
+
+#borde{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.color{
+	background-color:#2B617F;
+	color: white;
+	border:solid;
+	border-color: #000000;
+	opacity: 0.7;
+}
+
+
+.cajaTitulo{
+	background-color:#000000;
+	color: white;
+	height: 60px;
+	opacity: 0.7;
+}
+
+@media(max-width: 768px){
+    .cajaTitulo{
+    	height: 40px;
+    }
+
+}
+
+#tituloEvento{
+
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin-top: 15px;
+	color: white;
+}
+
+@media(max-width: 768px){
+    #tituloEvento{
+    	font-size: 12pt;
+    }
+
+}
+
+#fec{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-style: italic;
+	color: #E3D026;
+	padding-right: 30px;
+	margin-top: -32px;
+
+}
+@media(max-width: 768px){
+    #fec{
+    	font-size: 0pt;
+    }
+
+}
+
+#leermasCarru{
+
+	padding-top: 10px;
+
+}
+
+/*CAROUSEL*/
+
+
+
+
+
+/*GALERIA y EVENTOS  PHP*/
+
+.galeria{
+	width: 300px;
+	height: 300px;
+	margin-top: 10px;
+}
+
+
+#RecuadroGal{
+
+	border-style: solid;
+	border-color: #E3D026;
+
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+	padding-bottom: 10px; 
+	height: 400px;
+
+
+}
+
+
+@media(max-width: 1020px){
+    #RecuadroGal{
+    	height: auto;
+    }
+}
+
+#Recuadro { 
+
+	border-style: solid;
+	border-color: #E3D026;
+
+	margin-top: 5px;
+	margin-bottom: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+	padding-bottom: 10px; 
+	height: 350px;
+}
+
+@media(max-width: 1020px){
+    #Recuadro{
+    	height: auto;
+    }
+}
+
+#fotoEvent{
+
+   padding-top: 5%; 
+  /* height: 300px; */
+
+   width: 80%;
+   max-height: 300px;	
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+#tituloEvent { 
+   text-align: center;
+   font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #A2C6CC;
+}
+
+#DescripEvent { 
+   text-align: justify;
+   font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 12px;
+	margin-left: 12px;
+	color: gray;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#leermasEvent { 
+	padding-right: 10px;
+   font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 5px;
+	color: #E3D026;
+
+}
+
+#megusta{
+
+  	text-align:right;
+	display: inline-block;
+	border:none; 
+	overflow:hidden; 
+	height:25px;
+}
+
+
+/* NOTICIAS E INICIO PHP */
+
+#subtitulo{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #A2C6CC;
+	font-size: 25px;
+
+}
+
+#descripcion{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: white;
+	font-size: 14px;
+
+}
+
+#fecha{
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-style: italic;
+	color: #E3D026;
+	font-size: 18px;
+
+}
+#leermasNoti{
+
+	color: #5ac7ed;
+	vertical-align: bottom;
+	font-size: 18px;
+
+}
+
+#leermasDIV{
+
+	padding-top: 60px;
+
+}
+
+@media(max-width: 1020px){
+    #leermasDIV{
+		padding-top: 5px;
+    }
+}
+
+
+
+#title{
+  	text-align: center;
+	font-size: 18px;
+	color: #5ac7ed;
+}
+
+
+.image{
+	max-width: 100%;
+	height: auto;
+}
+
+
+#imageBig{
+
+	max-height: 400px;
+
+}
+
+#imageSmall{
+
+	max-height: 200px;
+
+}
+
+#imageInicio{
+
+	max-height: 300px;
+
+}
+
+#imagePubli{
+
+	max-height: 150px;
+}
+
+.publi{
+
+	padding-top: 30px;
+}
+
+
+
+/*CONTACTO:*/
+
+#contacto{
+
+	text-align: justify;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #A2C6CC;
+	font-size: 20px;
+}
+
+#contactoFooter{
+
+	font-size: 15px;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+
+}
+
+
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
+	
+
+
+
+

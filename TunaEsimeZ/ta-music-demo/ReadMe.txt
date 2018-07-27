@@ -1,0 +1,1 @@
+Extract the zip file, import the "ta-music-demo.xml" file via Tools – Import, and import the "ta-music-options.json" file via Theme Panel – Import / Export.

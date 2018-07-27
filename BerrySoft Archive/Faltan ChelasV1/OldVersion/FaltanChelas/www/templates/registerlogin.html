@@ -1,0 +1,63 @@
+
+<ion-view title="Login">
+
+    <div class="col col-center BodyLogin">
+        
+        <div class="row">
+            <img class="image ImageLogin" src="img/icon.jpg" alt="Faltan Chelas Icon">
+        </div>
+        
+        <h3 class="Title">Bienvenido a Faltan Chelas</h3>
+            
+        <div class = "row row-center">
+
+            <button class="button button-block RoundLeft" ng-class="ShowLogin ? 'Selected' : 'Deselected'" ng-click="SelectedLogin()">&nbsp;&nbsp;&nbsp;&nbsp;Ingresa&nbsp;&nbsp;&nbsp;&nbsp;</button>                
+            <button class="button button-block RoundRight" ng-class="ShowRegister ? 'Selected' : 'Deselected'" ng-click="SelectedRegister()">Regístrate</button>                    
+        </div>
+
+        <div ng-if="ShowLogin">
+
+            <label class="Form item item-input RoundButton">
+                <i class="icon ion-email">&nbsp;&nbsp;&nbsp;</i>
+                <input type="text" placeholder="Email" ng-model="User.email">
+            </label>
+              
+            <label class="Form item item-input RoundButton">
+                <i class="icon ion-locked">&nbsp;&nbsp;&nbsp;</i>
+                <input type="password" placeholder="Contraseña" ng-model="User.password">
+            </label>
+
+            <button class="button button-block RoundButton Primary" ng-click="Login()">
+                Inicia Sesión
+            </button>
+
+        </div>
+        
+        <div ng-if="ShowRegister">
+            
+            <label class="Form item item-input RoundButton">
+                <i class="icon ion-email">&nbsp;&nbsp;&nbsp;</i>
+                <input type="text" placeholder="Email" ng-model="NewUser.email">
+            </label>
+              
+            <label class="Form item item-input RoundButton">
+                <i class="icon ion-ios-telephone">&nbsp;&nbsp;&nbsp;</i>
+                <input type="text" placeholder="Teléfono Celular" ng-model="NewUser.phone">
+            </label>
+
+            <label class="Form item item-input RoundButton">
+                <i class="icon ion-locked">&nbsp;&nbsp;&nbsp;</i>
+                <input type="password" placeholder="Contraseña" ng-model="NewUser.password">
+            </label>
+
+            <label class="Label" >* Al registrate aceptas nuestra <a href="www.faltanchelas.com"> política de privacidad.</a> </label>
+
+            <button class="button button-block RoundButton Primary" ng-click="Register()">
+                Regístrate
+            </button>
+            
+        </div>
+        
+
+    </div>
+</ion-view>

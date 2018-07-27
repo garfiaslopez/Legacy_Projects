@@ -1,0 +1,42 @@
+#include <bb/cascades/Application>
+
+#include <QLocale>
+#include <QTranslator>
+#include "applicationui.hpp"
+
+#include "NoteBook.hpp"
+#include "NoteEditor.hpp"
+#include "NoteViewer.hpp"
+
+#include <Qt/qdeclarativedebug.h>
+
+using namespace bb::cascades;
+
+Q_DECL_EXPORT int main(int argc, char **argv)
+{
+
+    // Register our custom types with QML, so that they can be used as property types
+    qmlRegisterUncreatableType<NoteEditor>("com.example.bb10samples.pim.notebook", 1, 0, "NoteEditor", "Usage as property type and access to enums");
+    qmlRegisterType<NoteViewer>();
+
+
+    Application app(argc, argv);
+
+    // Create the Application UI object, this is where the main.qml file
+    // is loaded and the application scene is set.
+    new ApplicationUI(&app);
+
+    // Load the UI description from main.qml
+        //QmlDocument *qml = QmlDocument::create("asset:///NotasTest.qml").parent(&app);
+
+        // Make the NoteBook object available to the UI as context property
+       // qml->setContextProperty("_noteBook", new NoteBook(&app));
+    //! [1]
+
+        // Create the application scene
+       // AbstractPane *appPage = qml->createRootObject<AbstractPane>();
+        //Application::instance()->setScene(appPage);
+
+    // Enter the application main event loop.
+    return Application::exec();
+}

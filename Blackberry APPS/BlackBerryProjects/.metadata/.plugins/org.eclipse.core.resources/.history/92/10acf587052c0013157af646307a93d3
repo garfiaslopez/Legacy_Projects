@@ -1,0 +1,30 @@
+<root>
+
+    <tema title="Constantes"       			    image="../images/items/pear_peach.png"     file="MateConstantes.qml"/>
+    
+	<header title="Geometria:"/>
+	
+    <tema title="Areas y Perimetros"           	image="asset://imagenes/AreayPerimetro.png"     file="MateAreas.qml"/>
+    <tema title="Angulos"           			image="../images/items/pear_peach.png"     file="MateAngulos.qml"/>
+    <tema title="Triangulos"      			    image="../images/items/pear_peach.png"     file="MateTriangulos.qml"/>
+    <tema title="Teorema de Pitagoras"          image="../images/items/pear_peach.png"     file="MatePitagoras.qml"/>
+    <tema title="Identidades Trig."             image="../images/items/pear_peach.png"     file="MateIdentidades.qml"/>
+    
+   	<header title="Algebra:"/>
+   	
+   	<tema title="Numeros Complejos"            image="../images/items/pear_peach.png"     file="MateNumerosComplejos.qml"/>
+    <tema title="Factorización"                image="../images/items/pear_peach.png"     file="MateFactorizacion.qml"/>
+    <tema title="Raices"                       image="../images/items/pear_peach.png"     file="MateRaices.qml"/>
+    <tema title="Binomio"                      image="../images/items/pear_peach.png"     file="MateBinomio.qml"/>
+        
+   	<header title="Calculo:"/>
+   	
+   	<tema title="Desigualdades"                image="../images/items/pear_peach.png"     file="MateDesigualdades.qml"/>
+    <tema title="Valor Absoluto"               image="../images/items/pear_peach.png"     file="MateValorAbsoluto.qml"/>
+    <tema title="Funciones"                    image="../images/items/pear_peach.png"     file="MateFunciones.qml"/>
+    <tema title="Limites"                      image="../images/items/pear_peach.png"     file="MateLimites.qml"/>
+   	<tema title="Derivadas"                    image="../images/items/pear_peach.png"     file="MateDerivadas.qml"/>
+    <tema title="Integrales"                   image="../images/items/pear_peach.png"     file="MateIntegrales.qml"/>
+
+    
+</root>

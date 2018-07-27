@@ -1,0 +1,28 @@
+<div class="card RoundCard" ng-if="ShowForm">
+    <form>
+
+        <label class="item-input">
+            &nbsp;<i class="icon ion-ios-person">&nbsp;&nbsp;&nbsp;</i>
+            <input type="text" placeholder="Nombre del tarjetahabiente" ng-model="Form.card.name">
+        </label>
+
+        <label class="item-input">
+            <i class="icon ion-card">&nbsp;&nbsp;&nbsp;</i>
+            <input type="text" placeholder="Numero de tarjeta (16 Digitos)" ng-model="Form.card.number">
+        </label>
+
+        <div class="row DebitCardForm">
+            <label class="DebitForm item-input">
+                <input class="DebitInput" type="text" placeholder="CVC (000)" ng-model="Form.card.cvc">
+            </label>
+            <label class="DebitForm item-input">
+                <input class="DebitInput" type="text" placeholder="Mes (00)" ng-model="Form.card.exp_month">
+            </label>
+            <label class="DebitForm item-input">
+                <input class="DebitInput" type="text" placeholder="Año (0000)" ng-model="Form.card.exp_year">
+            </label>                    
+        </div>
+
+     </form>
+    
+</div>

@@ -1,0 +1,53 @@
+02:08:19 **** Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+
+02:08:21 Build Finished (took 2s.608ms)
+

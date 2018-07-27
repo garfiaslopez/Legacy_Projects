@@ -1,0 +1,40 @@
+{ 
+    "_id" : ObjectId("57c5f562752e22596cc0601c"), 
+    "user_id" : ObjectId("57c5f44d752e22596cc0601b"), 
+    "description" : "Me gustaria darme de alta en su app. actualmente cuanto con un modelorama", 
+    "subject" : "alta", 
+    "date" : ISODate("2016-08-22T21:52:15.138+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57cdf59c752e22596cc0602d"), 
+    "user_id" : ObjectId("57cdf214752e22596cc06026"), 
+    "description" : "Hola nadie me pide cervezas ayudenme", 
+    "subject" : "hola", 
+    "date" : ISODate("2016-08-22T21:52:15.138+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57cdf5f7752e22596cc0602f"), 
+    "user_id" : ObjectId("57cdf1d1752e22596cc06024"), 
+    "description" : "Soy mara.", 
+    "subject" : "probando", 
+    "date" : ISODate("2016-08-22T21:52:15.138+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57ce12a1a8bfdde953170d6f"), 
+    "user_id" : ObjectId("57cdf605752e22596cc06030"), 
+    "description" : "Nada nadando. Dejaba sisjsi", 
+    "subject" : "nada", 
+    "date" : ISODate("2016-09-06T00:43:59.337+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("582cc3f450c3ff25e6b5a9c6"), 
+    "user_id" : ObjectId("582ca21b50c3ff25e6b5a9c5"), 
+    "description" : "Cuál es el precio de entrega", 
+    "subject" : "como funciona", 
+    "date" : ISODate("2016-10-05T07:54:58.536+0000"), 
+    "__v" : NumberInt(0)
+}

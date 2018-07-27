@@ -1,0 +1,12 @@
+<root>
+
+    <tema title="Periodic Table"            image="/Imagenes/TablaPeriodica.png"       file="QuimicaTablaPeriodica.qml"/>
+    <tema title="Constants"                 image="/Imagenes/ConstantesQ.png"          file="QuimicaConstante.qml"/>
+    <tema title="Electronic Config."        image="/Imagenes/ConfigElectronica.png"    file="QuimicaConfgElect.qml"/>
+    <tema title="Cross-link"                image="/Imagenes/Enlaces.png"              file="QuimicaEnlaces.qml"/>
+    <tema title="Absolute Pressure"         image="/Imagenes/Presion.png"              file="QuimicaPresionAbs.qml"/>
+    <tema title="Density"                   image="/Imagenes/Densidad.png"             file="QuimicaDensidad.qml"/>
+    <tema title="Gases"                     image="/Imagenes/Gases.png"                file="QuimicaGases.qml"/>
+    <tema title="Chemical Reactions"        image="/Imagenes/Reacciones.png"           file="QuimicaReacciones.qml"/>
+    
+</root>

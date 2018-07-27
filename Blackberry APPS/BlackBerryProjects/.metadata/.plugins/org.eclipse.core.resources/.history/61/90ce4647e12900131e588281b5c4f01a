@@ -1,0 +1,106 @@
+import bb.cascades 1.2
+
+NavigationPane {
+    id: navNotas
+    Page {
+        titleBar:  TitleBar {
+            kind: TitleBarKind.FreeForm
+            kindProperties: FreeFormTitleBarKindProperties {
+                Container {
+                    layout: DockLayout {
+                    }
+                    Label {
+                        
+                        text: "Notas"
+                        textStyle {
+                            color: Color.White
+                            fontWeight: FontWeight.Default
+                            fontSize: FontSize.Large
+                        }
+                        verticalAlignment: VerticalAlignment.Center
+                        horizontalAlignment: HorizontalAlignment.Center
+                    }
+                }
+                expandableArea {
+                    content: Label {
+                        text: "Podras guardar diversas notas"
+                    }
+                    expanded: false
+                    toggleArea: TitleBarExpandableAreaToggleArea.Default
+                }
+            }
+        }
+        Container {
+            ListView {
+                id: listNotas
+                dataModel: ArrayDataModel {
+                    id: notaArray
+                }  
+                onTriggered: {
+                    var CeldaEscojida = dataModel.data(indexPath);
+                    
+                    var number = dataModel.value(indexPath);
+                    
+                    console.debug("NUMER OF CELDA ES   "+ number);
+                    
+                    console.debug("CELDA ESCOJIDA ES  " + CeldaEscojida);
+                    
+                    console.debug( notaArray.value(CeldaEscojida));
+                    
+                    console.debug(notaArray.size());
+                    
+                    console.debug(notaArray.value(CeldaEscojida,"WRONG"));
+                    
+                    CeldaEscojida = 0;
+                    
+                }
+            }
+            
+            TextField {
+                id: nameField
+                hintText: "Type a name here"
+            }
+            
+            Container {
+                layout: StackLayout {
+                    orientation: LayoutOrientation.LeftToRight
+                }
+                Button {
+                    text: "Append"
+                    
+                    onClicked: {
+                        // If a name was typed in the text field, append
+                        // it to the data model
+                        if (nameField.text != "")
+                            notaArray.append(nameField.text);
+                    }
+                }
+                Button {
+                    text: "Prepend"
+                    
+                    onClicked: {
+                        // If a name was typed in the text field, prepend
+                        // it to the data model
+                        if (nameField.text != "")
+                            notaArray.insert(0, nameField.text);
+                    }
+                }
+                Button {
+                    text: "Insert"
+                    
+                    onClicked: {
+                        // If a name was typed in the text field, insert
+                        // it near the middle of the data model
+                        if (nameField.text != "") {
+                            notaArray.insert
+                            ((notaArray.size()/2), nameField.text);
+                        }                       
+                    }
+                }
+            } // end of Container
+        }
+        
+     }
+    
+    
+}

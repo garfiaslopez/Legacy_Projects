@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<trgtproject id="com.qnx.tools.ide.target.core.target">
+    <data>
+        <item id="com.qnx.tools.ide.target">
+            <qconnport value="8000"/>
+            <qconnguid value="09c641f8-cead-43a8-8b43-395592e9765d"/>
+            <conn-type value="USB"/>
+            <qconnostype value="nto"/>
+            <qconnhostname value="blackberry-8522.local"/>
+            <last-device value="0x2B2B8522"/>
+            <targettmpdir value="/var/tmp"/>
+            <project>
+                <name value="blackberry-8522"/>
+            </project>
+        </item>
+    </data>
+</trgtproject>

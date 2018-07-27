@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14B25" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Clientes" representedClassName="Clientes" syncable="YES">
+        <attribute name="correo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Empleados" representedClassName="Empleados" syncable="YES">
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAdmin" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ultimasesion" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="usuario" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Empresas" representedClassName="Empresas" syncable="YES">
+        <attribute name="direccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Gastos" representedClassName="Gastos" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empleado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nogasto" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Notas" representedClassName="Notas" syncable="YES">
+        <attribute name="empleado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pendientes" representedClassName="Pendientes" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empleado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="prioridad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Productos" representedClassName="Productos" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precio" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stock" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Ventas" representedClassName="Ventas" syncable="YES">
+        <attribute name="empleado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="noventa" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="producto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Empresas" positionX="-6912" positionY="-1377" width="128" height="118"/>
+        <element name="Gastos" positionX="-6329" positionY="-1368" width="128" height="133"/>
+        <element name="Notas" positionX="-6183" positionY="-1368" width="128" height="118"/>
+        <element name="Pendientes" positionX="-6032" positionY="-1368" width="128" height="133"/>
+        <element name="Productos" positionX="-6624" positionY="-1372" width="128" height="103"/>
+        <element name="Ventas" positionX="-6480" positionY="-1368" width="128" height="133"/>
+        <element name="Empleados" positionX="-6761" positionY="-1377" width="128" height="135"/>
+        <element name="Clientes" positionX="-5877" positionY="-1366" width="128" height="133"/>
+    </elements>
+</model>

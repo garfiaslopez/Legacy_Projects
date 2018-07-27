@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+
+        <link href="css/ionic.app.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/leaflet-0.7.5.css" />
+
+
+        <link rel="stylesheet" href="./node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+        <link rel="stylesheet" href="./node_modules/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+            <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        -->
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+        <script src="cordova.js"></script>
+
+        <script src="lib/socket.io-client/socket.io.js"></script>
+        <script src="lib/angular-socket-io/socket.js"></script>
+        <script src="lib/moment/moment.js"></script>
+
+        <script src="js/conekta.js"></script>
+        <script type="text/javascript">
+            Conekta.setPublishableKey('key_Guc4wPea72sjMdKVMxNbrAQ');
+        </script>
+
+        <script src="js/AngularPatchiOS9.js"></script>
+
+        <!-- your Services -->
+        <script src="js/services/AuthService.js"></script>
+        <script src="js/services/AppService.js"></script>
+
+        <!-- Mapas -->
+
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet-src.js"></script>
+        <script src="./node_modules/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+        <script src="./node_modules/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+        <!-- your app's js -->
+        <script src="js/controllers/RegLogController.js"></script>
+        <script src="js/controllers/SideMenuController.js"></script>
+        <script src="js/controllers/MainController.js"></script>
+        <script src="js/controllers/ProductController.js"></script>
+        <script src="js/controllers/ComplementController.js"></script>
+        <script src="js/controllers/CheckoutController.js"></script>
+        <script src="js/controllers/MapController.js"></script>
+        <script src="js/app.js"></script>
+
+    </head>
+
+    <body ng-app="App" ng-controller="AppController">
+        <ion-nav-view name="Main-View"></ion-nav-view>
+    </body>
+</html>

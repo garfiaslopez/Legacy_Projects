@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nocturne</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">   
+    <style>
+
+            /* Demo styles */
+            body{border-top:4px solid #000;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:700px;margin:20px auto;}
+            h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+            p{margin:0 0 20px}
+            a {color:#22BCB9;text-decoration:none;}
+            .cred{margin-top:20px;font-size:11px;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:700px;}
+            @media(max-width: 768px){
+              #galleria{
+                height:400px;
+                width: 270px;
+              }
+            }
+    </style> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!--backstretch-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.backstretch.js">
+    </script> 
+    <!-- load Galleria -->
+    <script src="../js/galleria-1.3.6.min.js"></script>
+</head>
+<body background="../img/fondo.png">
+
+<div id="banner">	
+
+<img id="logo" src="../img/logo.png">			
+
+	</div>								
+	<script>
+		$("#banner").backstretch(["../img/dome.jpg", "../img/coffee.jpg", "../img/pot-holder.jpg"]
+		,{duration: 2000, fade:3000
+       	});
+	</script>
+
+	<div class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">		
+
+
+            <div class="navbar-header">
+
+                <buttom type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Nocturne|Oaxaca</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </buttom>
+
+                <a id="title" class="navbar-brand" href="http://nocturneoax.com">Nocturne|Oaxaca</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.php">Inicio   /</a></li>
+                    <li><a href="../pages/eventos.php">Eventos   /</a></li> 
+                    <li><a href="../pages/noticias.php">Noticias   /</a></li>
+                    <li><a id="navbarColor" href="../pages/galeria.php">Galeria   /</a></li>
+                    <li><a href="../pages/agenda.php">Agenda   /</a></li> 
+                    <li><a href="../pages/revista.php">Revista   /</a></li> 
+                    <li><a href="../pages/contacto.php">Contacto</a></li>       
+                </ul>
+            </div>  
+
+
+
+		</div>
+	</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-9">
+            
+            <div id="galleria">
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/800px-Athabasca_Rail_at_Brule_Lake.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Athabasca_Rail_at_Brule_Lake.jpg/100px-Athabasca_Rail_at_Brule_Lake.jpg",
+                        data-title="Athabasca Rail"
+                        data-description="The Athabasca River railroad track at the mouth of Brulé Lake in Alberta, Canada."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Back-scattering_crepuscular_rays_panorama_1.jpg/1280px-Back-scattering_crepuscular_rays_panorama_1.jpg">
+                    <img
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Back-scattering_crepuscular_rays_panorama_1.jpg/100px-Back-scattering_crepuscular_rays_panorama_1.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Back-scattering_crepuscular_rays_panorama_1.jpg/1400px-Back-scattering_crepuscular_rays_panorama_1.jpg"
+                        data-title="Back-scattering crepuscular rays"
+                        data-description="Picture of the day on Wikimedia Commons 26 September 2010."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/800px-Interior_convento_3.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/120px-Interior_convento_3.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Interior_convento_3.jpg/1400px-Interior_convento_3.jpg"
+                        data-title="Interior convento"
+                        data-description="Interior view of Yuriria Convent, founded in 1550."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/800px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/100px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg/1280px-Oxbow_Bend_outlook_in_the_Grand_Teton_National_Park.jpg"
+                        data-title="Oxbow Bend outlook"
+                        data-description="View over the Snake River to the Mount Moran with the Skillet Glacier."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/800px-Hazy_blue_hour_in_Grand_Canyon.JPG">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/100px-Hazy_blue_hour_in_Grand_Canyon.JPG",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hazy_blue_hour_in_Grand_Canyon.JPG/1280px-Hazy_blue_hour_in_Grand_Canyon.JPG"
+                        data-title="Hazy blue hour"
+                        data-description="Hazy blue hour in Grand Canyon. View from the South Rim."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/800px-2909_vallon_moy_res.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/100px-2909_vallon_moy_res.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2909_vallon_moy_res.jpg/1280px-2909_vallon_moy_res.jpg"
+                        data-title="Haute Severaisse valley"
+                        data-description="View of Haute Severaisse valley and surrounding summits from the slopes of Les Vernets."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/800px-Bohinjsko_jezero_2.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/100px-Bohinjsko_jezero_2.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bohinjsko_jezero_2.jpg/1280px-Bohinjsko_jezero_2.jpg"
+                        data-title="Bohinj lake"
+                        data-description="Bohinj lake (Triglav National Park, Slovenia) in the morning."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+                <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/800px-Bowling_Balls_Beach_2_edit.jpg">
+                    <img 
+                        src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/100px-Bowling_Balls_Beach_2_edit.jpg",
+                        data-big="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bowling_Balls_Beach_2_edit.jpg/1280px-Bowling_Balls_Beach_2_edit.jpg"
+                        data-title="Bowling Balls"
+                        data-description="Mendocino county, California, USA."
+                    >
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+        
+
+        </div>
+
+     </div> <!-- /row -->
+
+
+</div> <!-- /container -->
+
+
+<div id="borde">
+	<hr class="featurette-divider">
+	<footer>
+      	<p class="pull-right"><a href="#">Ir Arriba</a></p>
+       	<p>&copy; 2014 Berry Software, Inc. </p>
+   	</footer>
+</div>
+
+<script>
+
+    // Load the classic theme
+    Galleria.loadTheme('galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+</script>
+
+</body>
+</html>

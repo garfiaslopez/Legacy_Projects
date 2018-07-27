@@ -1,0 +1,9 @@
+1
+7
+images/background.png
+images/green_light.png
+images/red_light.png
+images/traffic_light_frame.png
+images/yellow_light.png
+main.qml
+TrafficLight.qml

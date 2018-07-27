@@ -1,0 +1,22 @@
+<root>
+
+    <tema title="Constants"       			       image="../Imagenes/Constantes.png"          file="MateConstantes.qml"/>
+    
+	
+    <tema title="Areas and Perimeters"           	image="../Imagenes/AreayPerimetro.png"     file="MateAreas.qml"/>
+
+    <tema title="Pythagorean Theorem"               image="../Imagenes/TeoremaPitagoras.png"   file="MatePitagoras.qml"/>
+    <tema title="Trigonometric Identities"          image="../Imagenes/IdentidadesTrig.png"    file="MateIdentidades.qml"/>
+    
+   	
+   	<tema title="Complex Numbers"                   image="../Imagenes/NumComplejos.png"       file="MateNumerosComplejos.qml"/>
+    <tema title="Factorization"                     image="../Imagenes/Binomio.png"            file="MateFactorizacion.qml"/>        
+   	
+   	<tema title="Inequalities"                      image="/Imagenes/Desigualdades.png"        file="MateDesigualdades.qml"/>
+    <tema title="Absolute Value"                    image="/Imagenes/ValorAbsoluto.png"        file="MateValorAbsoluto.qml"/>
+    <tema title="Functions"                         image="/Imagenes/Funciones.png"            file="MateFunciones.qml"/>
+    <tema title="Derivates"                         image="/Imagenes/Derivadas.png"            file="MateDerivadas.qml"/>
+    <tema title="Limits"                            image="../Imagenes/Limites.png"            file="MateLimites.qml"/>
+
+    
+</root>

@@ -1,0 +1,81 @@
+<root>
+
+	<header title=""/>
+		<listItem   constante="Speed of Light"        title="299 792 458 m/s"       />
+		
+	<header title=""/>
+		<listItem   constante="Speed of Sound"     title="340.292 m/s"/>
+	
+	<header title=""/>
+		<listItem   constante="Gravity"     title="9.8 m/s^2  |  32ft/s^2"/>
+		
+	<header title=""/>
+		<listItem   constante="Gravity Constant"     title="6.672 x10e-11 Nm^2/Kg^2"/>
+		
+	<header title=""/>
+		<listItem   constante="Air Density(0ºC y 1 atm)"     title="1,293 gr/lt"/>
+		
+	<header title=""/>
+		<listItem   constante="Water Density"     title="1 gr/cm^3  |  62,4 lbs/pie^3"/>
+	
+	<header title=""/>
+		<listItem   constante="Electric Charge"     title="1.602 x10e-19 C"/>
+		
+	<header title=""/>
+		<listItem   constante="Electric Constant"     title="8.854187 x10e-12 Fm-1"/>
+		
+	<header title=""/>
+		<listItem   constante="Dielectric Constant"     title="8.85 x10e-12 F/m"/>
+	
+	<header title=""/>
+		<listItem   constante="Electron Mass"     title="9.11 x10e-31 Kg"/>
+		
+	<header title=""/>
+		<listItem   constante="Proton Mass"     title="1.673 x10e-27 Kg"/>
+
+	<header title=""/>
+		<listItem   constante="Vacum Permitivity"     title="8.854 x10e-12 Amp s/m volt"/>
+		
+	<header title=""/>
+		<listItem   constante="Permeavility Constant"     title="-1.26 x10e-12 H/m"/>
+	
+	<header title=""/>
+		<listItem   constante="Permitivity Constant"        title="8.85 x10 e-12 F/m"       />
+		
+	<header title=""/>
+		<listItem   constante="Earth Mass"     title="5.976 x10e24 Kg"/>
+
+	<header title=""/>
+		<listItem   constante="Moon Mass"     title="7.36 x10e22 Kg"/>
+
+	<header title=""/>
+		<listItem   constante="Earth Medium Ratio"     title="6.37 x10e6 m"/>
+
+	<header title=""/>
+		<listItem   constante="Planck Constant"        title="6.626 x10e-34 J.s"       />
+		
+	<header title=""/>
+		<listItem   constante="Stefan Constant"     title="5.67051 x10e-6 W/k^2m^2"/>
+
+	<header title=""/>
+		<listItem   constante="Boltzman Constant"     title="1.38 x10e-23 J/K"/>
+		
+	<header title=""/>
+		<listItem   constante="Faraday Constant"     title="96485.3 C/mol"/>
+		
+	<header title=""/>
+		<listItem   constante="Molar Volume"        title="0.0224141 m^3/mol"       />
+			
+	<header title=""/>
+		<listItem   constante="Molar Planck"        title="3.990312 x10e-10 J/s mol"       />
+		
+	<header title=""/>
+		<listItem   constante="Bohr Magnetón"     title="927.4 x10e-26 J/T"/>
+	
+	<header title=""/>
+		<listItem   constante="Nuclear Magnetón"     title="5.05 x10e-27 J/T"/>
+	
+	<header title=""/>
+		<listItem   constante="Bohr Ratio"     title="5.29177 x10e-11 m"/>
+
+</root>

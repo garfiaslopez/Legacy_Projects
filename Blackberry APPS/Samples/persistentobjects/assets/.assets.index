@@ -1,0 +1,12 @@
+1
+10
+CreatePage.qml
+DeletePage.qml
+images/create.png
+images/delete.png
+images/icon1.png
+images/retrieve.png
+images/update.png
+ListPage.qml
+main.qml
+UpdatePage.qml

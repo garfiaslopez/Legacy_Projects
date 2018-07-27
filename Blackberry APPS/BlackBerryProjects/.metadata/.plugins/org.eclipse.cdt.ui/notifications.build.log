@@ -1,0 +1,54 @@
+03:16:11 **** Build of configuration Simulator-Debug for project notifications ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notifications.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.hpp
+WARNING: Failure to find: ../src/*.hpp
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notifications.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.hpp
+WARNING: Failure to find: ../src/*.hpp
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notifications.pro
+Updating 'notifications_en_GB.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+Updating 'notifications_fr.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+Updating 'notifications_it.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+Updating 'notifications_de.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+Updating 'notifications_es.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+Updating 'notifications.ts'...
+    Found 6 source text(s) (6 new and 0 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notifications.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations/notifications.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 6 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/x86'
+qcc -Vgcc_ntox86 -c -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_SVG_LIB -DQT_SQL_LIB -DQT_XMLPATTERNS_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../notifications -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtNetwork -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtGui -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtXml -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtXmlPatterns -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtSql -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtSvg -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtScript -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -o o-g/notifications o-g/.obj/main.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbsystem -lbbplatform -lbb -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtXml -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notifications/x86'
+
+03:16:21 Build Finished (took 9s.648ms)
+

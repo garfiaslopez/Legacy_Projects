@@ -1,0 +1,24 @@
+13:53:36 **** Incremental Build of configuration Simulator-Debug for project CascadesProject ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate CascadesProject.pro
+Updating 'CascadesProject.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease CascadesProject.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/translations/CascadesProject.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/CascadesProject/x86'
+
+13:53:36 Build Finished (took 271ms)
+

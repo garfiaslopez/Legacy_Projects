@@ -1,0 +1,11 @@
+<root>
+
+    <titulo title="Cuadrado"        image="../images/items/pear_peach.png" area="LxL" perimetro="Lx4"  />
+ 	<titulo title="Circulo"/>
+ 	<titulo title="Rectangulo"/>
+ 	<titulo title="Triangulo"/>
+ 	<titulo title="Rombo"/>
+ 	<titulo title="Trapecio"/>
+ 
+ 	
+</root>

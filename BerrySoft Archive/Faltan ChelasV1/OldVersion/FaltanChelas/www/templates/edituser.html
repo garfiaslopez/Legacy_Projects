@@ -1,0 +1,43 @@
+<ion-modal-view>
+
+    <ion-header-bar class="Primary">
+
+        <h1 class="title">Editar Datos</h1>
+
+        <div class="buttons">
+            <button class="button Primary" ng-click="CloseModalEditUser()">Cerrar</button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content class="Container">
+
+        <br>
+
+        <form ng-submit="SaveChanges()">
+
+            <div class="RoundCard card">
+
+                <label class="item item-input">
+                    <span class="input-label">Nombre</span>
+                    <input type="text" ng-model="UserData.name">
+                </label>
+                
+                <label class="item item-input">
+                    <span class="input-label">Telefono</span>
+                    <input type="text" ng-model="UserData.phone">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="UserData.password">
+                </label>
+            
+            </div>
+
+            <button class="button button-block RoundButton Primary" type="submit">Guardar</button>
+
+        </form>
+
+    </ion-content>
+
+</ion-modal-view>

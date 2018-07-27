@@ -1,0 +1,14 @@
+{ 
+    "_id" : ObjectId("57bb723bee3e06756999ef12"), 
+    "username" : "faltanchelasadmin", 
+    "password" : "$2a$10$DokQO898WGcyAwTU0BZH4u/eiqsFQzdNPYpgoLilEDm1Nk.zBJT3S", 
+    "date" : ISODate("2016-08-22T21:44:27.548+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("57bb77f4752e22596cc06018"), 
+    "password" : "$2a$10$5YHvLBCpB/kLvka0zhTlGuqCPc6cTfA7LrFkBUyyL1L07bzUJQAO2", 
+    "username" : "admin", 
+    "date" : ISODate("2016-08-22T21:52:14.605+0000"), 
+    "__v" : NumberInt(0)
+}

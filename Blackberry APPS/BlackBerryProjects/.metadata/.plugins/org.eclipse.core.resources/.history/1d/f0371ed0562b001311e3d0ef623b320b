@@ -1,0 +1,39 @@
+import bb.cascades 1.2
+
+Page {
+    
+    
+    Container {
+        Label {
+            id: miEtiqueta
+            property string miprop: "hola"
+            text: "Hola mundo"
+            
+            onMipropChanged: {
+                console.log("CAMBIO MIPROP")
+            }
+            
+        }
+        CheckBox {
+            id: micheck
+            
+            
+        }
+        
+        Button {
+            
+            
+            
+            text: "hola"
+            onClicked: {
+                miEtiqueta.text = "Texto corto"
+                micheck.checked = !(micheck.checked);
+                miEtiqueta.miprop = "CambioPROP";
+                
+            }
+            
+        }
+        
+
+    }
+}

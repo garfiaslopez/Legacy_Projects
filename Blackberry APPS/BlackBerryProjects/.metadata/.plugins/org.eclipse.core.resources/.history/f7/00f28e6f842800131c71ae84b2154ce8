@@ -1,0 +1,30 @@
+<root>
+
+    <tema title="Constantes"        image="../images/items/pear_peach.png"     file="/MateFiles/IntroduccionMate.qml"/>
+    
+	<header title="Geometria:"/>
+	
+    <tema title="Areas"                                                      file="/MateFiles/AlgebraMate1.qml"/>
+    <tema title="Angulos"       />
+    <tema title="Triangulos"      />
+    <tema title="Teorema de Pitagoras"              />
+    <tema title="Identidades Trigonometricas"          />
+    
+   	<header title="Algebra:"/>
+   	
+   	<tema title="Numeros Complejos"       />
+    <tema title="Factorización"       />
+    <tema title="Raices"       />
+    <tema title="Binomio"       />
+        
+   	<header title="Calculo:"/>
+   	
+   	<tema title="Desigualdades"       />
+    <tema title="Valor Absoluto"       />
+    <tema title="Funciones"       />
+    <tema title="Limites"       />
+   	<tema title="Derivadas"       />
+    <tema title="Integrales"       />
+
+    
+</root>

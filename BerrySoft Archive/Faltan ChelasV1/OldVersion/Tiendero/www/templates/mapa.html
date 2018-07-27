@@ -1,0 +1,19 @@
+<ion-view title="Faltan Chelas">
+	
+	<div data-tap-disabled="true" class="DetailMap" id="map"></div>
+
+	<ion-footer-bar class="FooterVendor">
+		<div class="row row-center">
+			<div class="col col-30">
+				<button class="button button-block Primary" ng-click="SmsToVendor()">SMS</button>
+			</div>
+			<div class="col col-40">
+				<button class="button button-block Primary" ng-click="Arrived()">Llegue</button>
+			</div>
+			<div class="col col-30">
+			 	<a href="{{UserToServe.phone}}" class="button button-block Primary" ng-click="CallToVendor()">LLamada</a>
+			</div>
+		</div>
+	</ion-footer-bar>
+
+</ion-view>

@@ -1,0 +1,72 @@
+<root>
+	<header title=""/>
+		<listItem   constante="π   pi"        title="3.14159272"       />
+	
+	<header title=""/>
+		<listItem   constante="e   euler"     title="2.7182818"/>
+		
+	<header title=""/>
+		<listItem   constante="1/e"     title="0.3678794"/>
+	
+	<header title=""/>
+		<listItem   constante="1/π"     title="0.3183098"/>
+		
+				
+	<header title=""/>
+		<listItem   constante="π^e"     title="22.459157"/>
+		
+	<header title=""/>
+		<listItem   constante="π^2"     title="9.8696044"/>
+		
+		
+	<header title=""/>
+		<listItem   constante="e π/2"     title="4.8104773"/>
+	
+	<header title=""/>
+		<listItem   constante="e^2"     title="7.3890560"/>
+		
+	<header title=""/>
+		<listItem   constante="e^π"     title="23.140692"/>
+		
+	<header title=""/>
+		<listItem   constante="e^-π"     title="0.0432139"/>
+
+	<header title=""/>
+		<listItem   constante="ln2"        title="0.6931472"       />
+	
+	<header title=""/>
+		<listItem   constante="ln10"     title="2.3025851"/>
+	
+	<header title=""/>
+		<listItem   constante="√2  Sqrt 2"        title="1.4142136"       />
+	
+	<header title=""/>
+		<listItem   constante="√3  Sqrt 3"     title="1.7320508"/>
+	
+	<header title=""/>
+		<listItem   constante="1 rad"        title="57.2957795º"       />
+	
+	<header title=""/>
+		<listItem   constante="Log10 e"     title="0.4342945"/>
+		
+	<header title=""/>
+		<listItem   constante="Log10 M"     title="-0.36221"/>
+	
+	<header title=""/>
+		<listItem   constante="Log10 3"        title="0.4771212"       />
+	
+	<header title=""/>
+		<listItem   constante="Log e  2"     title="0.6931471"/>
+	
+	<header title=""/>
+		<listItem   constante="Log e  3"     title="1.0986122"/>
+	
+	<header title=""/>
+		<listItem   constante="Log e  π"     title="1.1447298"/>
+
+	
+		
+	
+</root>
+
+	

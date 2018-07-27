@@ -1,0 +1,80 @@
+ <ion-view title="Faltan Chelas" hide-back-button="true">
+      <!-- The content of the page -->
+
+    <ion-content class="padding Container">
+
+        <div ng-if="ShowWaitingOrder">
+
+            <h2 class="TitleSection">En Espera De Orden</h2>
+        
+            <div class="row">
+                <img class="image ImageLogin" src="img/icon.jpg" alt="Faltan Chelas Icon">
+            </div>
+        </div>
+
+        <div ng-if="ShowDataOrder">
+
+            <h2 class="TitleSection">Tienes Una Nueva Orden</h2>
+
+            <div class="ListCard card">
+        
+                <div class="row">
+                    <div class="col col-20">
+                        <img class="image ImageProfile" src="img/ProfileUser.png" alt="UserProfile">
+                    </div>
+                    <div class="col col-80">
+                        <p class="ProductItem">{{OrderToServe.user.name}}</p>
+                        <p class="ProductItem">{{OrderToServe.coords.denomination}}</p>
+                    </div>
+                </div>
+
+                <p class="SubTitleCard">Descripción De Orden:</p>
+
+                <ul class="list">
+                    <li class="ListItem" ng-repeat="Product in OrderToServe.order">
+                      <div class="row">
+                        <div class="col col-10 Item"> {{Product.quantity}}</div>
+                      <div class="col col-40 Item"> {{Product.product}}</div> 
+                      <div class="col col-30 Item"> {{Product.description}}</div> 
+                      <div class="col col-25 Item"> {{Product.price | currency:"$"}}</div>  
+                      </div>
+                    </li>
+                    <li style="border-bottom: white;" class="ListItem">
+                      <div class="row">
+                        <div class="col col-70 ProductItem"> Total</div>
+                      <div class="col col-30 PriceItem"> {{TotalOrder | currency:"$"}}</div>  
+                      </div>
+                    </li>
+                </ul>
+
+                <div class="row row-center Buttons">
+                    <button class="button button-block Secondary" ng-click="Cancel()">Cancelar</button>
+                    <button class="button button-block Primary" ng-click="Accept()">Aceptar</button>
+                </div>
+
+            </div>
+
+        </div> 
+
+    </ion-content>
+
+
+    <div ng-if="ShowMapOrder" data-tap-disabled="true" class="DetailMap" id="map"></div>
+
+    <ion-footer-bar ng-if="ShowMapOrder" class="FooterVendor">
+        <div class="row row-center">
+            <div class="col col-30">
+                <button class="button button-block Primary" ng-click="SmsToVendor()">SMS</button>
+            </div>
+            <div class="col col-40">
+                <button class="button button-block Primary" ng-click="Arrived()">Llegue</button>
+            </div>
+            <div class="col col-30">
+                <a href="tel:+52-{{OrderToServe.user_id.phone}}"  class="button button-block Primary">LLamada</a>
+            </div>
+        </div>
+    </ion-footer-bar>
+
+
+ </ion-view>
+

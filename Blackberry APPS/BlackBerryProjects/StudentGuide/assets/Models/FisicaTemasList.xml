@@ -1,0 +1,8 @@
+<root>
+
+    <tema title="Cinematica"        image="../images/items/pear_peach.png"     file="/FisicaFiles/FisicaTema1.qml"/>
+    <tema title="Electromagnetismo"/>
+    <tema title="Vectores"/>
+    <tema title="Termodinamica"/>
+    <tema title=""/>
+</root>

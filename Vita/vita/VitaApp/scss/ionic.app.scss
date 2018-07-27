@@ -1,0 +1,140 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$PrimaryColor:         #FE6800;
+$SecondaryColor:       #00A5B1;
+$PrimaryText:          #212121;
+$SecondaryText:        #727272;
+$PrimaryDivider:       #B6B6B6;
+$PrimaryGray:          #607D8B;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+$RobotoDraftFontPath: "../lib/robotodraft/fonts"; // REMINDER: edit as appropriate!
+$RobotoDraftFontName: "RobotoDraft";
+$RobotoDraftFontVersion: "1.0.0";
+
+@import "www/lib/robotodraft/sass/robotodraft.scss";
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+.Container {
+	padding-left:  10%;
+	padding-right:  10%;
+}
+.HeaderLogin {
+    background-color: $PrimaryColor;
+    height: 150px;
+}
+.ProfileMenu {
+    background-color: $PrimaryColor;
+    height: 100px;
+}
+.Title {
+	text-align: center;
+	color: white;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+.ImageLogin {
+    box-shadow: none !important;
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    height: 100px;
+    width: 100px;
+}
+.QRImage {
+    box-shadow: none !important;
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    height: 300px;
+    width: 300px;
+}
+.ProfileImage {
+    margin-top: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.ProfileName {
+    font-size: 18px;
+    color: white;
+}
+.ProfileEmail {
+    margin-top: -10px;
+    font-size: 12px;
+    color: white;
+}
+.RoundLeft {
+	background-color: white;
+	border-color: $SecondaryText;
+	color: black;
+	margin-right: -1%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+    min-height: 20px;
+}
+.RoundRight {
+	background-color: white;
+	border-color: $SecondaryText;
+	color: black;
+	margin-left: -1%;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+    min-height: 20px;
+}
+.Selected {
+	background-color: $SecondaryText !important;
+	color: white !important;
+}
+.Deselected {
+    background-color: white !important;
+	border-color: $SecondaryText !important;
+}
+.Textfield {
+    color: $PrimaryColor !important;
+    background-color: $PrimaryDivider !important;
+}
+
+.Primary {
+	background-color: $PrimaryColor !important;
+	border-color: $PrimaryColor !important;
+	color: white !important;
+}
+
+.Secondary {
+    background-color: $SecondaryColor !important;
+	border-color: $SecondaryColor !important;
+	color: white !important;
+}
+
+.SecondaryBar {
+    background-color: $SecondaryColor !important;
+	border-color: $SecondaryColor !important;
+	color: white !important;
+    background-image: none !important;
+}
+
+.ListContactCell {
+    min-height: 100px !important;
+}

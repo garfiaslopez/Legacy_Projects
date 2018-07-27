@@ -1,0 +1,28 @@
+//
+//  Logueo.h
+//  AdminEnterprise
+//
+//  Created by Jose De Jesus Garfias Lopez on 14/01/15.
+//  Copyright (c) 2015 Jose De Jesus Garfias Lopez. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@class EmpresasVC;
+
+
+@interface Logueo : UIViewController{
+
+    EmpresasVC *EmpresasView;
+}
+
+
+@property (weak, nonatomic) IBOutlet UITextField *User_TextField;
+@property (weak, nonatomic) IBOutlet UITextField *Pass_TextField;
+
+
+
+- (IBAction)Aceptar:(id)sender;
+- (IBAction)Back:(id)sender;
+
+@end

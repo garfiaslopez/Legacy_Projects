@@ -1,0 +1,10 @@
+<root>
+	<header title="Geometria"/>
+    <tema title="Constantes"        image="../images/items/pear_peach.png"     file="/MateFiles/IntroduccionMate.qml"/>
+    <tema title="Algebra"                                                      file="/MateFiles/AlgebraMate1.qml"/>
+    <tema title="Derivadas"       />
+    <tema title="Integrales"      />
+    <tema title="Trigonometria"              />
+    <tema title="Numeros Complejos"          />
+    
+</root>

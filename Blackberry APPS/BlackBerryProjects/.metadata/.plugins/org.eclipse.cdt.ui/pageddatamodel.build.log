@@ -1,0 +1,18 @@
+03:37:32 **** Build of configuration Simulator-Debug for project pageddatamodel ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile pageddatamodel.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile pageddatamodel.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/pageddatamodel/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/pageddatamodel/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/pageddatamodel/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/pageddatamodel/x86'
+
+03:37:36 Build Finished (took 3s.820ms)
+

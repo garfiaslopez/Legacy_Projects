@@ -1,0 +1,33 @@
+02:00:03 **** Incremental Build of configuration Simulator-Debug for project dombookmarks ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile dombookmarks.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile dombookmarks.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+
+02:00:04 Build Finished (took 1s.554ms)
+

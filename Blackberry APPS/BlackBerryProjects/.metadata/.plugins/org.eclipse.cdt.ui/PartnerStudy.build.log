@@ -1,0 +1,37 @@
+01:13:45 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86/../src/main.cpp:52: undefined reference to `NoteBook::NoteBook(QObject*)'
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+
+01:13:45 Build Finished (took 722ms)
+

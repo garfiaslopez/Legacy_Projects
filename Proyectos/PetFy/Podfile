@@ -1,0 +1,29 @@
+platform :ios, "9.0"
+use_frameworks!
+
+
+def pods_base
+    pod 'Spark-SDK'
+    pod 'SparkSetup'
+    pod 'SwiftyJSON'
+    pod 'Alamofire'
+    pod 'SwiftSpinner'
+    pod 'NVActivityIndicatorView'
+    pod 'Firebase'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Messaging'
+    pod 'GoogleSignIn'
+    pod 'Firebase/Database'
+end
+
+target 'PetFy' do
+    pods_base
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
+end

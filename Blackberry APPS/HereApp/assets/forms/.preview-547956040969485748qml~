@@ -1,0 +1,44 @@
+import bb.cascades 1.0
+
+Page {
+    id:pFormInstitucion
+     signal addPageClose()
+    
+    titleBar: TitleBar {
+        title: "Agregar Inst."
+        dismissAction: ActionItem {
+            title: "Cancelar"
+            onTriggered: {
+                formAddInstitucion.close()
+            }
+        }
+        acceptAction: ActionItem {
+            title: "Guardar"
+            onTriggered: {
+                formAddInstitucion.close()
+            }
+        }
+    }
+    
+    content: Container {
+        id:cFormInstitucion
+        
+        leftPadding: 20.0
+        topPadding: 20.0
+        rightPadding: 20.0
+        bottomPadding: 20.0
+        
+        layout: StackLayout {
+            orientation: LayoutOrientation.TopToBottom
+        }
+        
+        Label {
+            text: Nombre
+            horizontalAlignment: HorizontalAlignment.Fill
+        }
+        
+        TextField {
+            id: nombreInst
+        }
+    }
+}

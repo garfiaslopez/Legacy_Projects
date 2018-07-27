@@ -1,0 +1,12 @@
+<root>
+
+    <tema title="Tabla Periodica"           image="../images/items/pear_peach.png"     file="QuimicaTablaPeriodica.qml"/>
+    <tema title="Constantes"                image="../images/items/pear_peach.png"     file="QuimicaConstante.qml"/>
+    <tema title="Config. Electronica"       image="../images/items/pear_peach.png"     file="QuimicaConfgElect.qml"/>
+    <tema title="Enlaces"                   image="../images/items/pear_peach.png"     file="QuimicaEnlaces.qml"/>
+    <tema title="Presion Absoluta"          image="../images/items/pear_peach.png"     file="QuimicaPresionAbs.qml"/>
+    <tema title="Densidad"                  image="../images/items/pear_peach.png"     file="QuimicaDensidad.qml"/>
+    <tema title="Gases"                     image="../images/items/pear_peach.png"     file="QuimicaGases.qml"/>
+    <tema title="Reacciones Quimicas"       image="../images/items/pear_peach.png"     file="QuimicaReacciones.qml"/>
+    
+</root>

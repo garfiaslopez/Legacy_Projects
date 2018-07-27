@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - keybox@localhost" uuid="f7c8e94b-64a9-4800-b2b5-6d6cf6303b2c">
+    <database-info product="MySQL" version="5.5.46-0ubuntu0.14.04.2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="keybox"/>
+    <table name="categoria" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="max_dato" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="max_filtro" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="nombre" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK2EEFB8578624FC" table="dato" schema="" catalog="keybox" columns="id_categoria_id"/>
+      <exported-key name="FKFBF7DEB8578624FC" table="especifico" schema="" catalog="keybox" columns="id_categoria_id"/>
+      <exported-key name="FKB408CD08578624FC" table="filtro" schema="" catalog="keybox" columns="id_categoria_id"/>
+    </table>
+    <table name="comentario" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="descripcion" sqlType="VARCHAR" precision="140" scale="0" nullable="false" jdbcType="12"/>
+      <column name="fecha" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="id_dato_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="id_empleado_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK9E0DE7E133D40558" columns="id_dato_id" ref-table="dato" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK9E0DE7E1928978" columns="id_empleado_id" ref-table="empleado" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK9E0DE7E133D40558" unique="false" columns="id_dato_id"/>
+      <index name="FK9E0DE7E1928978" unique="false" columns="id_empleado_id"/>
+    </table>
+    <table name="dato" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="archivo_dropbox" sqlType="VARCHAR" precision="245" scale="0" nullable="true" jdbcType="12"/>
+      <column name="descripcion" sqlType="VARCHAR" precision="140" scale="0" nullable="false" jdbcType="12"/>
+      <column name="elaborado" sqlType="VARCHAR" precision="135" scale="0" nullable="false" jdbcType="12"/>
+      <column name="fecha" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="id_categoria_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="nombre" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="tags" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="tipo_propuesta" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK2EEFB8578624FC" columns="id_categoria_id" ref-table="categoria" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK9E0DE7E133D40558" table="comentario" schema="" catalog="keybox" columns="id_dato_id"/>
+      <exported-key name="FK3EA1C9A633D40558" table="favorito" schema="" catalog="keybox" columns="id_dato_id"/>
+      <exported-key name="FK6AC90C433D40558" table="valor" schema="" catalog="keybox" columns="id_dato_id"/>
+      <index name="FK2EEFB8578624FC" unique="false" columns="id_categoria_id"/>
+    </table>
+    <table name="empleado" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="avatar" sqlType="MEDIUMBLOB" precision="16777215" scale="0" nullable="false" jdbcType="-4"/>
+      <column name="correo" sqlType="VARCHAR" precision="180" scale="0" nullable="false" jdbcType="12"/>
+      <column name="nombre" sqlType="VARCHAR" precision="135" scale="0" nullable="false" jdbcType="12"/>
+      <column name="usuario" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK9E0DE7E1928978" table="comentario" schema="" catalog="keybox" columns="id_empleado_id"/>
+      <exported-key name="FK3EA1C9A6928978" table="favorito" schema="" catalog="keybox" columns="id_empleado_id"/>
+    </table>
+    <table name="especifico" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="id_categoria_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="nombre" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="tipo" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKFBF7DEB8578624FC" columns="id_categoria_id" ref-table="categoria" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK6AC90C420DFB6D8" table="valor" schema="" catalog="keybox" columns="id_especifico_id"/>
+      <index name="FKFBF7DEB8578624FC" unique="false" columns="id_categoria_id"/>
+    </table>
+    <table name="favorito" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="id_dato_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="id_empleado_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK3EA1C9A633D40558" columns="id_dato_id" ref-table="dato" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK3EA1C9A6928978" columns="id_empleado_id" ref-table="empleado" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK3EA1C9A633D40558" unique="false" columns="id_dato_id"/>
+      <index name="FK3EA1C9A6928978" unique="false" columns="id_empleado_id"/>
+    </table>
+    <table name="filtro" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="icono" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="id_categoria_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="nombre" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="color" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKB408CD08578624FC" columns="id_categoria_id" ref-table="categoria" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKB408CD08578624FC" unique="false" columns="id_categoria_id"/>
+    </table>
+    <table name="role" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="authority" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKF1FA12E78675FBBC" table="usuario_role" schema="" catalog="keybox" columns="role_id"/>
+      <index name="authority" unique="true" columns="authority"/>
+    </table>
+    <table name="usuario" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="version" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="account_expired" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="account_locked" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="enabled" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password_expired" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="username" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKF1FA12E72390A5F8" table="usuario_role" schema="" catalog="keybox" columns="usuario_id"/>
+      <index name="username" unique="true" columns="username"/>
+    </table>
+    <table name="usuario_role" schema="" catalog="keybox" type="TABLE">
+      <column name="role_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="usuario_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="role_id,usuario_id"/>
+      <foreign-key name="FKF1FA12E72390A5F8" columns="usuario_id" ref-table="usuario" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKF1FA12E78675FBBC" columns="role_id" ref-table="role" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FKF1FA12E72390A5F8" unique="false" columns="usuario_id"/>
+      <index name="FKF1FA12E78675FBBC" unique="false" columns="role_id"/>
+    </table>
+    <table name="valor" schema="" catalog="keybox" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="id_dato_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="id_especifico_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="valor" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK6AC90C420DFB6D8" columns="id_especifico_id" ref-table="especifico" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK6AC90C433D40558" columns="id_dato_id" ref-table="dato" ref-schema="" ref-catalog="keybox" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK6AC90C420DFB6D8" unique="false" columns="id_especifico_id"/>
+      <index name="FK6AC90C433D40558" unique="false" columns="id_dato_id"/>
+    </table>
+  </data-source>
+</component>

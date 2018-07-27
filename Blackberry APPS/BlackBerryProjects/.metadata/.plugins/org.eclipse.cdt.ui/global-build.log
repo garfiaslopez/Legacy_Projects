@@ -1,0 +1,2188 @@
+20:09:22 **** Clean-only build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 clean 
+rm -rf arm arm-p x86
+rm -f .//translations/*.qm
+20:09:58 **** Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+cd x86 && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc ../StudentGuide.pro  CONFIG+=debug_and_release CONFIG+=simulator
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o-g/.obj/StudentGuide.gch/c++
+../src/main.cpp:16:24: fatal error: NoteBook.hpp: No such file or directory
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+compilation terminated.
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx8.0.0/4.6.3/cc1plus error 1
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[2]: *** [o-g/.obj/main.o] Error 1
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+20:10:57 **** Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+00:52:59 **** Build of configuration Device-Debug for project PartnerStudy ****
+make -j3 Device-Debug 
+make -C .//translations -f Makefile update
+cd arm && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc ../PartnerStudy.pro CONFIG+=debug_and_release CONFIG+=device
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 1 source text(s) (1 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./arm -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/arm'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/arm'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o.le-v7-g/.obj/PartnerStudy.gch/c++
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/moc_applicationui.o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -o o.le-v7-g/PartnerStudy o.le-v7-g/.obj/applicationui.o o.le-v7-g/.obj/main.o o.le-v7-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/arm'
+01:06:26 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+cd x86 && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc ../PartnerStudy.pro  CONFIG+=debug_and_release CONFIG+=simulator
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (19 new and 0 already existing)
+    Kept 1 obsolete entries
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o-g/.obj/PartnerStudy.gch/c++
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/PartnerStudy -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../PartnerStudy -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/moc_applicationui.o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86/../src/main.cpp:35: undefined reference to `NoteBook::NoteBook(QObject*)'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:07:46 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86/../src/main.cpp:52: undefined reference to `NoteBook::NoteBook(QObject*)'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:08:48 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `main':
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86/../src/main.cpp:52: undefined reference to `NoteBook::NoteBook(QObject*)'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:10:10 **** Incremental Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+01:11:21 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86/../src/main.cpp:52: undefined reference to `NoteBook::NoteBook(QObject*)'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:13:26 **** Incremental Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+01:13:45 **** Incremental Build of configuration Simulator-Debug for project PartnerStudy ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate PartnerStudy.pro
+Updating 'PartnerStudy.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease PartnerStudy.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations/PartnerStudy.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/PartnerStudy o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86/../src/main.cpp:52: undefined reference to `NoteBook::NoteBook(QObject*)'
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+o-g/.obj/main.o: In function `int qmlRegisterUncreatableType<NoteEditor>(char const*, int, int, char const*, QString const&)':
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/PartnerStudy/x86'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:128: undefined reference to `NoteEditor::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:154: undefined reference to `NoteEditor::staticMetaObject'
+o-g/.obj/main.o: In function `int qmlRegisterType<NoteViewer>()':
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:92: undefined reference to `NoteViewer::staticMetaObject'
+/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative/qdeclarative.h:118: undefined reference to `NoteViewer::staticMetaObject'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/PartnerStudy] Error 1
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:17:20 **** Incremental Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+01:21:04 **** Build of configuration Simulator-Debug for project jsonreadwrite ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile jsonreadwrite.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile jsonreadwrite.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+01:26:28 **** Build of configuration Device-Debug for project JSONTest ****
+make -j3 Device-Debug 
+make -C .//translations -f Makefile update
+cd arm && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc ../JSONTest.pro CONFIG+=debug_and_release CONFIG+=device
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate JSONTest.pro
+Updating 'JSONTest.ts'...
+    Found 1 source text(s) (1 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease JSONTest.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations/JSONTest.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C ./arm -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o.le-v7-g/.obj/JSONTest.gch/c++
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/moc_applicationui.o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -o o.le-v7-g/JSONTest o.le-v7-g/.obj/applicationui.o o.le-v7-g/.obj/main.o o.le-v7-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+01:33:57 **** Incremental Build of configuration Device-Debug for project JSONTest ****
+make -j3 Device-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate JSONTest.pro
+Updating 'JSONTest.ts'...
+    Found 17 source text(s) (17 new and 0 already existing)
+    Kept 1 obsolete entries
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease JSONTest.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations/JSONTest.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 17 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C ./arm -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/arm'
+01:34:06 **** Incremental Build of configuration Simulator-Debug for project JSONTest ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+cd x86 && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc ../JSONTest.pro  CONFIG+=debug_and_release CONFIG+=simulator
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate JSONTest.pro
+Updating 'JSONTest.ts'...
+    Found 17 source text(s) (0 new and 17 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease JSONTest.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations/JSONTest.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 17 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/x86'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o-g/.obj/JSONTest.gch/c++
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/JSONTest -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../JSONTest -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/moc_applicationui.o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/JSONTest o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/JSONTest/x86'
+01:38:50 **** Incremental Build of configuration Simulator-Debug for project jsonreadwrite ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile jsonreadwrite.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile jsonreadwrite.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+01:48:11 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+../src/main.cpp: In function 'int main(int, char**)':
+../src/main.cpp:40:29: error: 'qml' was not declared in this scope
+../src/main.cpp:40:63: error: expected primary-expression before '>' token
+../src/main.cpp:40:65: error: expected primary-expression before ')' token
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx8.0.0/4.6.3/cc1plus error 1
+make[2]: *** [o-g/.obj/main.o] Error 1
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make: *** [Simulator-Debug] Error 2
+01:49:16 **** Incremental Build of configuration Simulator-Debug for project jsonreadwrite ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile jsonreadwrite.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile jsonreadwrite.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/jsonreadwrite/x86'
+01:49:57 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o-g/.obj/StudentGuide.gch/c++
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+../src/main.cpp: In function 'int main(int, char**)':
+../src/main.cpp:40:29: error: 'qml' was not declared in this scope
+../src/main.cpp:40:63: error: expected primary-expression before '>' token
+../src/main.cpp:40:65: error: expected primary-expression before ')' token
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx8.0.0/4.6.3/cc1plus error 1
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[2]: *** [o-g/.obj/main.o] Error 1
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:51:17 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+../src/main.cpp: In function 'int main(int, char**)':
+../src/main.cpp:39:9: error: expected type-specifier before 'ApplicationUI'
+../src/main.cpp:39:9: error: expected ';' before 'ApplicationUI'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/lib/gcc/i486-pc-nto-qnx8.0.0/4.6.3/cc1plus error 1
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[2]: *** [o-g/.obj/main.o] Error 1
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:51:32 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/StudentGuide o-g/.obj/main.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+01:51:42 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+01:53:12 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudentGuide -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudentGuide -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/StudentGuide o-g/.obj/main.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86/../src/main.cpp:17: undefined reference to `ApplicationUI::ApplicationUI(bb::cascades::Application*)'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[2]: *** [o-g/StudentGuide] Error 1
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:55:10 **** Incremental Build of configuration Simulator-Debug for project StudentGuide ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudentGuide.pro
+Updating 'StudentGuide.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudentGuide.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations/StudentGuide.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/StudentGuide o-g/.obj/main.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+o-g/.obj/main.o: In function `main':
+/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86/../src/main.cpp:17: undefined reference to `ApplicationUI::ApplicationUI(bb::cascades::Application*)'
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+cc: /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/ntox86-ld error 1
+make[2]: *** [o-g/StudentGuide] Error 1
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudentGuide/x86'
+make[1]: *** [debug] Error 2
+make: *** [Simulator-Debug] Error 2
+01:55:51 **** Build of configuration Device-Debug for project StudyPartner ****
+make -j3 Device-Debug 
+make -C .//translations -f Makefile update
+cd arm && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc ../StudyPartner.pro CONFIG+=debug_and_release CONFIG+=device
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 1 source text(s) (1 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 1 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./arm -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/arm'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/arm'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o.le-v7-g/.obj/StudyPartner.gch/c++
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntoarmv7le -c -Wc,-include -Wc,o.le-v7-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -mcpu=cortex-a9 -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-armv7le-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io.le-v7-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o.le-v7-g/.obj/moc_applicationui.o o.le-v7-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntoarmv7le -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -o o.le-v7-g/StudyPartner o.le-v7-g/.obj/applicationui.o o.le-v7-g/.obj/main.o o.le-v7-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/armle-v7/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/arm'
+01:56:31 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+cd x86 && /Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc ../StudyPartner.pro  CONFIG+=debug_and_release CONFIG+=simulator
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+    Kept 1 obsolete entries
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/moc -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -D__QNXNTO__ ../src/applicationui.hpp -o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -x c++-header -c ../precompiled.h -o o-g/.obj/StudyPartner.gch/c++
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/applicationui.o ../src/applicationui.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/main.o ../src/main.cpp
+qcc -Vgcc_ntox86 -c -Wc,-include -Wc,o-g/.obj/StudyPartner -Wno-psabi -lang-c++ -fstack-protector -fstack-protector-all -g -Wno-psabi -Wall -W -D_REENTRANT -DQT_NO_IMPORT_QT47_QML -DQ_OS_BLACKBERRY -DQT_DECLARATIVE_DEBUG -DQT_DECLARATIVE_LIB -DQT_CORE_LIB -DQT_SHARED -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/share/qt4/mkspecs/blackberry-x86-qcc -I../../StudyPartner -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtCore -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4/QtDeclarative -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/qt4 -I../src -Io-g/.moc -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include -I/Applications/Momentics.app/target_10_2_0_1155/qnx6/usr/include/freetype2 -I. -o o-g/.obj/moc_applicationui.o o-g/.moc/moc_applicationui.cpp
+qcc -Vgcc_ntox86 -lang-c++ -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -Wl,-rpath-link,/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -o o-g/StudyPartner o-g/.obj/applicationui.o o-g/.obj/main.o o-g/.obj/moc_applicationui.o    -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6/x86/usr/lib/qt4/lib -L/Applications/Momentics.app/target_10_2_0_1155/qnx6//usr/lib/qt4/lib -lbbcascades -lQtDeclarative -lQtScript -lQtSvg -lQtSql -lsqlite3 -lz -lQtXmlPatterns -lQtGui -lQtNetwork -lsocket -lQtCore -lm -lbps 
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:07:52 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:10:44 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:12:18 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:23:32 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:24:50 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:26:00 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:26:42 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:10:27 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:10:39 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:22:17 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:23:15 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:29:06 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:32:54 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:46:55 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:51:32 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+02:06:40 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:13:25 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:14:12 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:15:43 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:17:13 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:18:10 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:21:34 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:22:34 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:24:57 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:28:19 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:39:22 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:45:42 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:47:44 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:48:51 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:57:12 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+03:58:07 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:00:43 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:01:59 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:03:31 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:05:12 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:05:55 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:06:39 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:09:34 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:11:41 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:16:48 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:35:20 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:40:14 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+04:53:04 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+06:59:19 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:00:41 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:03:09 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:03:35 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:04:16 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:04:54 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:14:13 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:16:12 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:22:23 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:22:50 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+07:23:28 **** Incremental Build of configuration Simulator-Debug for project StudyPartner ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate StudyPartner.pro
+Updating 'StudyPartner.ts'...
+    Found 0 source text(s) (0 new and 0 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease StudyPartner.pro
+Updating '/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations/StudyPartner.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/ndk-10.2-workspace/StudyPartner/x86'
+01:53:57 **** Build of configuration Simulator-Debug for project dombookmarks ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile dombookmarks.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile dombookmarks.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+01:58:04 **** Incremental Build of configuration Simulator-Debug for project dombookmarks ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile dombookmarks.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile dombookmarks.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+02:00:03 **** Incremental Build of configuration Simulator-Debug for project dombookmarks ****
+make all 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile dombookmarks.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile dombookmarks.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./arm -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/arm'
+make -C ./x86 -f Makefile all
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Release all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make -f Makefile.Debug all
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/dombookmarks/x86'
+02:08:19 **** Build of configuration Simulator-Debug for project notebook ****
+make Simulator-Debug 
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-armv7le-qcc -o arm/Makefile notebook.pro CONFIG+=device
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/qmake -spec blackberry-x86-qcc -o x86/Makefile notebook.pro CONFIG+=simulator
+WARNING: Failure to find: ../src/*.h
+WARNING: Failure to find: ../src/*.h
+make -C ./translations -f Makefile update release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate notebook.pro
+Updating 'notebook_en_GB.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_fr.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_it.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_de.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook_es.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+Updating 'notebook.ts'...
+    Found 19 source text(s) (0 new and 19 already existing)
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease notebook.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_en_GB.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_fr.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_it.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_de.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook_es.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations/notebook.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/notebook/x86'
+02:10:13 **** Build of configuration Simulator-Debug for project databasecreation ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate databasecreation.pro
+Updating 'databasecreation.ts'...
+    Found 20 source text(s) (0 new and 20 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease databasecreation.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations/databasecreation.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 20 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+02:11:30 **** Incremental Build of configuration Simulator-Debug for project databasecreation ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate databasecreation.pro
+Updating 'databasecreation.ts'...
+    Found 20 source text(s) (0 new and 20 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease databasecreation.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations/databasecreation.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 20 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecreation/x86'
+02:11:53 **** Build of configuration Simulator-Debug for project databasecrud ****
+make -j3 Simulator-Debug 
+make -C .//translations -f Makefile update
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lupdate databasecrud.pro
+Updating 'databasecrud.ts'...
+    Found 33 source text(s) (0 new and 33 already existing)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/translations'
+make -C .//translations -f Makefile release
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/translations'
+/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/lrelease databasecrud.pro
+Updating '/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/translations/databasecrud.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 33 untranslated source text(s)
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/translations'
+make -C ./x86 -f Makefile debug
+make[1]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/x86'
+make -f Makefile.Debug
+make[2]: Entering directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/x86'
+make[2]: Nothing to be done for `first'.
+make[2]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/x86'
+make[1]: Leaving directory `/Users/josegarfiaslopez/Dropbox/Developing BB/Samples/databasecrud/x86'

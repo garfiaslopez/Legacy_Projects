@@ -1,0 +1,270 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+$gray:							  #BFBFBF !default;
+$lightGray:						  #F0F0F0 !default;
+
+
+$PrimaryGray:					  #3E3B36 !default;
+$TextGray:						  #4F4C43 !default;
+$PrimaryYellow:					  #EFC028 !default;
+$BackgroundColor:				  #35342E !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+@font-face{
+    font-family: "NexaLight";
+    src: url($ionicons-font-path + '/Nexa_Light.ttf'),
+    url($ionicons-font-path + '/Nexa_Light.eot'); /* IE */
+}
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+	
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.MainView{
+
+}
+.FullMap {
+    height: 100%;
+}
+.DetailMap {
+    height: 85%;
+}
+.ImageProfile{
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+}
+.FooterVendor {
+	height: 15%;
+	background-color: $PrimaryGray;
+	border-color: $PrimaryGray;
+	color: white;
+}
+.SearchBar {
+	padding: 6px 8px;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+	background: white;
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 40px;
+}
+.bar .title{
+	font-family: 'NexaLight';
+	font-size: 20px;
+	color: white;
+}
+
+.Container {
+	background-color: $BackgroundColor;
+	padding-left:  5%;
+	padding-right:  5%;
+}
+
+.BodyLogin {
+	background-color: white;
+	padding-left:  10%;
+	padding-right:  10%;
+}
+
+.Title {
+	text-align: center;
+	color: $PrimaryGray;
+	font-size: 20px;
+	font-family: 'NexaLight';
+    margin-bottom: 52px;
+}
+.Subtitle {
+	margin-top: -2%;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	font-family: 'NexaLight';
+}
+.TitleSection{
+	padding-top: 5%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: 'NexaLight';
+}
+.ImageLogin {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -30px;
+	width: 150px;
+	height: 150px;
+}
+.RoundButton {
+	border-radius: 40px;
+}
+.RoundCard{
+	border-radius: 4%;
+}
+
+.RowListProduct{
+	background-color: $lightGray !important;
+	padding: 10px 20px 10px 16px !important;
+
+
+}
+
+.Selected {
+	background-color: $PrimaryGray;
+	border-color: $PrimaryGray;
+	color: white;
+}
+.Deselected {
+	background-color: white;
+	border-color: $PrimaryGray;
+	color: $PrimaryGray;
+}
+.RoundLeft {
+	margin-right: -1%;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.RoundRight {
+	margin-left: -1%;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.Primary {
+	background-color: $PrimaryYellow;
+	border-color: $PrimaryYellow;
+	color:white;
+}
+.Secondary {
+	background-color: $PrimaryGray;
+	border-color: $PrimaryGray;
+	color:white;
+}
+.OrderButton {
+	background-color: white;
+	border-color: white;
+	color: $PrimaryGray;
+}
+.OrderButton:hover {
+	color: $PrimaryGray;
+}
+.ListCard{
+
+}
+.ListItem{
+	border-color: $gray;
+	border-width: 1px;
+	border-style: solid;
+	border-top: white;
+	border-left: white;
+	border-right: white;
+	background-color: white;
+	color: $TextGray;
+	position: relative;
+	display: block;
+	padding: 8px;
+	font-size: 13px; 
+	margin-left:1%;
+	margin-right:1%;
+}
+.ProductItem{
+	font-family: 'NexaLight';
+	color: $TextGray;
+    font-size: 18px;
+
+}
+.PriceItem{
+	font-family: 'NexaLight';
+	text-align: right;
+}
+.PackButton{
+	margin-left: 5%;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Form {
+	margin-bottom: 1%;
+}
+.DebitCardForm{
+	margin-top: -5%;
+	margin-left: 1%;
+	margin-right: -2%;
+}
+.DebitImage{
+	display: block;
+	width: 35px;
+	height: 20px;
+}
+.DebitForm{
+	margin-right: -5%;
+	margin-left: -3%;
+	text-align: center;
+}
+.DebitInput{
+	text-align: center;
+}
+.DebitAdd {
+	margin-top: -20px !important;
+	background-color: $PrimaryGray;
+	border-color: $PrimaryGray;
+	color:white;
+}
+.Label{
+	font-family: 'NexaLight';	
+	color: $TextGray;
+	text-align: center;
+	font-size: 12px;
+}
+input {
+	font-family: 'NexaLight';	
+}
+
+button {
+	font-family: 'NexaLight';	
+}
+textarea {
+	font-family: 'NexaLight';	
+}
+span {
+	font-family: 'NexaLight';	
+}
+label {
+	font-family: 'NexaLight';	
+}
+
+
+.popup {
+	font-family: 'NexaLight';	
+}
+
+//MODS::
+.button:hover {
+	color: white;
+}
+.button.activated {
+	background-color: $PrimaryGray;
+}
+.leaflet-control-attribution {
+	padding-top:10px;
+}

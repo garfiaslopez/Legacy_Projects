@@ -1,0 +1,50 @@
+<ion-view title="Faltan Chelas">
+
+    <ion-content class="padding Container">
+
+    	<h2 class="TitleSection">¿Qué te falta?</h2>
+
+		<div class="card RoundCard">
+
+            <ul class="list margen">
+
+				<div class="item item-radio" ng-repeat="Product in ProductsOnDB" >
+	    			
+	    			<label>
+		    			<div class="RowListProduct row item-content">
+			    			<div class="col col-70 ProductItem"> {{Product.denomination}}</div>
+							<div class="col col-30 PriceItem"> {{Product.description}}</div>	
+			    		</div>
+
+	    			</label>
+	    			<div class="row">
+		    			<div 	ng-repeat="Price in Product.prices" 
+		    					ng-class="Price.Selected ? 'Primary' : 'Selected' "  
+		    					class="button PackButton" 
+		    					ng-click="SelectedPrice(Product,Price)">
+		    				{{Price.quantity}} 
+		    			</div>
+	    			</div>
+
+	  			</div>
+
+            </ul>
+        </div>
+		
+		<div ng-if="Order.price" class="card row">
+			<div class="col col-50">
+				<h4 style="text-align: center;" class="ProductItem">{{Order.quantity}} Pack</h4>
+			</div>
+			<div class="col col-50">
+				<h4 style="text-align: center;" class="ProductItem">{{Order.price | currency:"$"}}</h4>
+			</div>
+		</div>
+
+		
+        <button class="button button-block RoundButton Primary" ng-click="Continue()">
+            Continuar
+        </button>
+
+    </ion-content>
+
+</ion-view>
